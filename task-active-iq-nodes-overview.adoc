@@ -1,0 +1,26 @@
+---
+permalink: task-active-iq-nodes-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes, throttling, 
+summary: 了解SolidFire Active IQ 中的节点页面。 
+---
+= 节点
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在选定集群的侧面板提供的节点页面上、您可以查看集群中节点的信息。
+
+了解如何查看活动节点的信息以及选定节点的节点限制百分比：
+
+* link:task-active-iq-active-nodes.html["活动节点"]
+* link:task-active-iq-node-throttling.html["节点限制"]
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

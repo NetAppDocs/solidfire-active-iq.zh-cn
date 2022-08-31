@@ -1,0 +1,26 @@
+---
+permalink: task_active_iq_volumes_overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, volumes, cluster 
+summary: 了解SolidFire Active IQ 中的卷页面。 
+---
+= Volumes
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在选定集群的侧面板上提供的*卷*页面上、您可以查看有关在集群上配置的卷的信息。每个卷信息类别都以表格式或图形格式显示。
+
+从*卷*页面了解显示的内容：
+
+* link:task-active-iq-active-volumes.html["活动卷"]
+* link:task-active-iq-snapshots-and-schedules.html["Snapshot和Snapshot计划"]
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

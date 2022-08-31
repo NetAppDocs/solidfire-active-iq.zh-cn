@@ -1,0 +1,28 @@
+---
+permalink: task-active-iq-all-clusters-view-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, all, clusters, view 
+summary: 了解SolidFire Active IQ 中的所有集群视图页面。 
+---
+= 所有集群视图
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+所有集群视图*是SolidFire Active IQ 的登录页面。
+
+了解可从*所有集群视图*访问的内容：
+
+* link:task-active-iq-all-clusters-view-dashboard.html["所有集群视图信息板"]
+* link:task-active-iq-alerts.html["警报"]
+* link:task-active-iq-capacity-licensing.html["容量许可"]
+* link:task-active-iq-term-capacity.html["术语容量"]
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

@@ -1,0 +1,47 @@
+---
+permalink: task-active-iq-vmware-alarms.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, all, vmware, alarm, hci 
+summary: 了解SolidFire Active IQ 中的VMware警报页面。 
+---
+= VMware警报
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在选定NetApp HCI 集群的侧面板上提供的"VMware Aleres*"页面中、您可以查看与集群相关的VMware警报信息。
+
+
+NOTE: 只有NetApp HCI 集群才会显示"VMware Alarms*"页面。
+
+了解用户界面中显示的VMware警报数据。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| vCenter IP | vCenter Server的IP地址。 
+
+
+| 实体ID | vSphere中发出警报的对象的ID。 
+
+
+| Status | VMware警报的严重性。 
+
+
+| 警报名称 | VMware警报的名称。 
+
+
+| Description | VMware警报的问题描述。 
+
+
+| 触发时间 | 在Active IQ 中触发警报的时间、而不是在集群本身上。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

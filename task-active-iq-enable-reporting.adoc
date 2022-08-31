@@ -1,0 +1,113 @@
+---
+permalink: task-active-iq-enable-reporting.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, enable, reporting 
+summary: 了解如何在管理节点上启用SolidFire Active IQ 报告功能。 
+---
+= 启用SolidFire Active IQ 报告
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您在安装或升级期间尚未启用SolidFire Active IQ 报告功能、则必须先在管理节点上启用此功能、然后Active IQ 服务器才能从管理节点接收集群的数据有效负载。成功设置连接后、集群会向Active IQ 服务器发送信息。然后、您可以在Active IQ UI中查看集群、其中会显示集群信息。
+
+
+NOTE: 支持在Active IQ 中运行Google Chrome和Firefox浏览器。
+
+.开始之前
+* Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：
++
+** 您的存储集群运行的是 NetApp Element 软件 11.3 或更高版本。
+** 您已部署运行 11.3 或更高版本的管理节点。
+
+
+* 您可以访问 Internet 。不能从没有外部连接的非公开站点使用Active IQ 收集器服务。
+
+
+.步骤
+. 获取安装的基本资产 ID ：
++
+.. 在管理节点上打开清单服务 REST API UI ：
++
+[listing]
+----
+https://<ManagementNodeIP>/inventory/1/
+----
+.. 选择 * 授权 * 并完成以下操作：
++
+... 输入集群用户名和密码。
+... 输入客户端 ID `mnode-client` 。
+... 选择 * 授权 * 以开始会话。
+... 关闭窗口。
+
+
+.. 从 REST API UI 中，选择 * 获取​ /Installations * 。
+.. 选择 * 试用 * 。
+.. 选择 * 执行 * 。
+.. 从代码 200 响应正文中，复制安装的 `id` 。
++
+[listing, subs="+quotes"]
+----
+{
+  "installations": [
+    {
+      "_links": {
+        "collection": "https://10.111.211.111/inventory/1/installations",
+        "self": "https://10.111.217.111/inventory/1/installations/abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x"
+      },
+      *"id": "abcd01e2-ab00-1xxx-91ee-12f111xxc7x0x",*
+----
++
+
+NOTE: 您的安装具有在安装或升级期间创建的基本资产配置。
+
+
+
+. 激活遥测：
++
+.. 输入管理节点 IP 地址并后跟 ` /mnode` 来访问管理节点上的 mnode 服务 API UI ：
++
+[listing]
+----
+https://<ManagementNodeIP>/mnode
+----
+.. 选择 * 授权 * 或任何锁定图标并完成以下操作：
++
+... 输入集群用户名和密码。
+... 输入客户端 ID `mnode-client` 。
+... 选择 * 授权 * 以开始会话。
+... 关闭窗口。
+
+
+.. 配置基本资产：
++
+... 选择 * 放置 /assets/ ｛ asset_id ｝ * 。
+... 选择 * 试用 * 。
+... 在 JSON 有效负载中输入以下内容：
++
+[listing]
+----
+{
+"telemetry_active": true
+"config": {}
+}
+----
+... 在 * asset_ID* 中输入上一步中的基本 ID 。
+... 选择 * 执行 * 。
++
+只要资产发生更改， Active IQ 服务就会自动重新启动。修改资产会导致应用设置之前出现短暂的延迟。
+
+
+
+
+
+. 登录到 link:https://activeiq.solidfire.com/["SolidFire Active IQ"^] 并确认您可以查看集群。
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

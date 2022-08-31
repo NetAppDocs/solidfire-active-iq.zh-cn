@@ -1,0 +1,118 @@
+---
+permalink: task-active-iq-snapshots-and-schedules.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, snapshot, details, schedule 
+summary: 了解如何在SolidFire Active IQ 中查看快照详细信息和快照计划详细信息。 
+---
+= Snapshot和Snapshot计划
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解如何查看有关快照和快照计划的信息：
+
+* <<Snapshots>>
+* <<Snapshot Schedules>>
+
+
+
+
+== 快照
+
+从选定集群的侧面板提供的*卷*页面中、您可以查看有关卷快照的信息。
+
+.步骤
+. 选择*卷*>*快照*。
+. 或者、选择*卷*>*活动卷*、然后在操作列中选择 image:more_information.PNG["更多信息"] 图标、然后选择*查看快照*。
+. (可选)您可以通过选择将快照列表导出为CSV文件 image:export_button.PNG["导出按钮"] 图标。
+
+
+以下列表介绍了可用的详细信息：
+
+[cols="25,75"]
+|===
+| 标题 | Description 
+
+
+| ID | 显示分配给快照的快照ID。 
+
+
+| 卷 ID | 创建卷时提供的ID。 
+
+
+| 帐户 ID | 分配给卷的帐户的ID。 
+
+
+| UUID | 通用唯一标识符。 
+
+
+| Size | 用户定义的快照大小。 
+
+
+| 卷大小 | 从中创建快照的卷的大小。 
+
+
+| 创建时间 | 创建快照的时间。 
+
+
+| 保留到 | 删除快照的日期和时间。 
+
+
+| 组Snapshot ID | 如果将快照与其他卷快照分组在一起、则为快照所属的组ID。 
+
+
+| 已复制  a| 
+显示远程集群上快照的状态：
+
+* Present ：快照位于远程集群上。
+* Not Present：快照不在远程集群上。
+* Syncing：目标集群当前正在复制快照。
+* Deleted：目标已复制快照、然后将其删除。
+
+
+|===
+
+
+== Snapshot计划
+
+从选定集群的侧面板上提供的*卷*>*快照计划*页面中、您可以查看快照计划详细信息。
+
+您可以通过选择将快照计划列表导出为CSV文件 image:export_button.PNG["导出按钮"] 图标。
+
+以下列表介绍了可用的详细信息：
+
+[cols="25,75"]
+|===
+| 标题 | Description 
+
+
+| ID | 分配给计划的计划ID。 
+
+
+| Name | 用户分配的计划名称。 
+
+
+| Frequency | 运行计划的频率。频率可以设置为小时和分钟，周或月。 
+
+
+| 重复 | 指示计划是否重复执行。 
+
+
+| 卷ID | 计划快照中包含的卷ID。 
+
+
+| 上次运行 | 上次执行计划的时间。 
+
+
+| 上次运行状态 | 上次执行计划的结果。可能值：`success`或`Error` 
+
+
+| 已手动暂停 | 标识是否已手动暂停计划。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

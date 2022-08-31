@@ -1,0 +1,99 @@
+---
+permalink: task_active_iq_replication.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, replication 
+summary: 了解SolidFire Active IQ 中的复制页面。 
+---
+= Replication
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+可从选定集群的侧面板访问*复制*页面、其中提供了有关集群对和卷对的信息。
+
+了解有关集群对和卷对页面的更多信息：
+
+* <<cluster_pairs,集群对>>
+* <<volume_pairs,卷对>>
+
+
+
+
+== 集群对
+
+在选定集群的*复制*>*集群对*页面上、您可以查看有关集群对的以下信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 集群对ID | 创建集群对时提供的ID编号。 
+
+
+| 远程集群名称 | 对的远程集群的名称。 
+
+
+| 远程MVIP | 远程集群的管理虚拟IP。 
+
+
+| 复制卷 | 表示配对集群上复制的卷数。 
+
+
+| Status | 集群对的状态。 
+
+
+| UUID | 通用唯一标识符。 
+|===
+
+
+== 卷对
+
+在选定集群的*复制*>*卷对*页面上、您可以查看有关卷对的以下信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 卷 ID | 创建卷时提供的ID编号。 
+
+
+| 帐户 ID | 分配给卷的帐户的ID。 
+
+
+| 卷状态 | 复制卷的状态。 
+
+
+| 复制模式 | 为卷对选择的模式类型。 
+
+
+| 方向  a| 
+指示卷数据的方向：
+
+* source：表示正在将数据写入集群外的目标。
+* 目标：表示正在将数据从外部源写入本地卷。
+
+
+
+
+| 异步延迟  a| 
+自卷上次与远程集群同步以来的时间长度。如果卷未配对，则此值为空。
+
+
+NOTE: 处于活动复制状态的目标卷的异步延迟始终为0 (零)。目标卷在复制期间可感知系统、并假定异步延迟始终准确无误。
+
+
+
+| 远程集群 | 卷所在远程集群的名称。 
+
+
+| 远程卷ID | 远程集群上卷的卷 ID 。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

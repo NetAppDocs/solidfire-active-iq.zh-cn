@@ -1,0 +1,82 @@
+---
+permalink: task-active-iq-virtual-machines.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, virtual, machines, vm 
+summary: 了解SolidFire Active IQ 中的虚拟机页面。 
+---
+= 虚拟机
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在选定NetApp HCI 集群的侧面板上提供的*虚拟机*页面中、您可以查看有关虚拟机(VM)的CPU和存储相关状态信息。
+
+
+NOTE: 只有NetApp HCI 集群才会显示*虚拟机*页面。
+
+了解如何筛选和了解UI中显示的VM数据。
+
+
+
+== 查看虚拟机详细信息
+
+可从选定集群的侧面板访问的*虚拟机*页面提供了有关与该集群关联的每个活动虚拟机的信息。
+
+除了所有Active IQ 页面上提供的传统筛选选项之外、*虚拟机*页面还提供了快速筛选按钮、您可以选择这些按钮来确定常见的VM可用性状态。
+
+信息栏可快速概述以下数据：
+
+* Virtual Machines：与存储集群关联的VM的数量和各种可用性状态。
+* status：VM的警告或错误数。
+* 已配置资源：与存储集群关联的所有VM的总存储和内存资源。
+
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| Name | VM的友好名称。 
+
+
+| Status  a| 
+虚拟机的可用性状态：
+
+* Normal：虚拟机按预期响应。
+* 警告：已报告警告。有关详细信息、请参见vSphere。
+* 严重：已报告严重错误。有关详细信息、请参见vSphere。
+* unknown：无法访问虚拟机。
+
+
+
+
+| 电源状态 | 指示虚拟机是已启动、已关闭还是已暂停。 
+
+
+| vCenter IP | vCenter Server的IP地址。 
+
+
+| CPU数量 | 每个VM的CPU数量。 
+
+
+| 主机内存使用量 | 虚拟机正在使用的ESXi主机内存量。 
+
+
+| CPU使用量 | 活动使用的虚拟CPU占虚拟机中总可用CPU的百分比。 
+
+
+| Used capacity | 正在使用的VM存储资源的百分比。 
+
+
+| 磁盘延迟峰值 | 检测到的最大磁盘延迟、以毫秒为单位。 
+
+
+| 警报 | 虚拟机上触发的vSphere警报的数量。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

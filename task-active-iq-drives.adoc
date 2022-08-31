@@ -1,0 +1,55 @@
+---
+permalink: task_active_iq_drives.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, drives 
+summary: 了解SolidFire Active IQ 中的驱动器页面。 
+---
+= 驱动器
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+每个节点都包含一个或多个物理驱动器、用于存储集群的一部分数据。将驱动器成功添加到集群后、集群将使用驱动器的容量和性能。
+
+在选定集群的侧面板提供的*驱动器*页面上、您可以通过从*活动*、*可用*和*故障*选项卡中选择来筛选此页面。
+
+根据驱动器功能的状态、集群中的每个驱动器均可使用以下信息：
+
+[cols="25,75"]
+|===
+| 标题 | Description 
+
+
+| 驱动器 ID | 分配给驱动器的序列号。 
+
+
+| 节点 ID | 将节点添加到集群时分配的节点编号。 
+
+
+| 服务 ID | 与驱动器关联的块或分区服务的当前服务ID。 
+
+
+| 插槽 | 驱动器实际所在的插槽编号。 
+
+
+| Capacity | 驱动器的GB大小。 
+
+
+| 固件版本 | 驱动器上的固件版本。 
+
+
+| 串行 | SSD的序列号。 
+
+
+| 耗损 | 剩余损耗级别指示器。 
+
+
+| Type | 驱动器类型可以是块或元数据。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

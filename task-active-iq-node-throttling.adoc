@@ -1,0 +1,63 @@
+---
+permalink: task-active-iq-node-throttling.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, nodes, throttling 
+summary: 了解SolidFire Active IQ 中的节点限制页面。 
+---
+= 节点限制
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在选定集群的侧面板上提供的*节点*>*节点限制*页面上、您可以查看集群中节点的限制百分比。节点会在显示左侧以缩略图布局的形式列出、并根据选定时间范围的限制程度进行排序。
+
+了解如何查看节点限制信息：
+
+* <<View graphs and select date ranges>>
+* <<Export node throttling data>>
+
+
+
+
+== 查看图形并选择日期范围
+
+Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。
+
+您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。
+
+此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：
+
+* 绿色=高达39%
+* 黄色= 40到59%
+* 红色=高于59%
+
+
+link:task-active-iq-qos-recommendations.html["了解集群的QoS建议"]。
+
+
+NOTE: 在Node Throttling页面中、您可以确定存储集群中是否存在QoS推回、请参见此内容 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_check_for_QoS_pushback_in_Element_Software["知识库文章"^] 以了解相关信息。
+
+将鼠标指针置于图中的任意位置以查看时间点详细信息。
+
+.展开图示例
+====
+image:node_throttling_range.PNG["节点限制图"]
+
+====
+
+
+== 导出节点限制数据
+
+您可以将图形数据导出为逗号分隔值(CSV)格式。仅导出图中显示的信息。
+
+.步骤
+. 在列表视图或图形中、选择 image:export_button.PNG["导出按钮"] 图标。
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

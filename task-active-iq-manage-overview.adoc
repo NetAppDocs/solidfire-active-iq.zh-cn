@@ -1,0 +1,32 @@
+---
+permalink: task-active-iq-manage-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq 
+summary: 了解SolidFire Active IQ 页面。 
+---
+= 管理SolidFire Active IQ
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解如何使用 link:https://activeiq.solidfire.com/["SolidFire Active IQ (需要登录)"^] 要监控集群容量和性能、请执行以下操作：
+
+* link:task-active-iq-all-clusters-view-overview.html["所有集群视图"]
+* link:task-active-iq-select-cluster-overview.html["选择一个集群"]
+* link:task-active-iq-nodes-overview.html["节点"]
+* link:task_active_iq_drives.html["驱动器"]
+* link:task_active_iq_volumes_overview.html["Volumes"]
+* link:task_active_iq_replication.html["Replication"]
+* link:task-active-iq-virtual-volumes.html["虚拟卷"]
+* link:task-active-iq-qos-recommendations.html["QoS建议"]
+* link:task-active-iq-virtual-machines.html["虚拟机(仅限NetApp HCI 集群)"]
+* link:task-active-iq-vmware-alarms.html["VMware警报(仅限NetApp HCI 集群)"]
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

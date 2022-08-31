@@ -1,0 +1,21 @@
+---
+permalink: task-active-iq-troubleshoot-support.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, troubleshoot, support 
+summary: 对SolidFire Active IQ 问题进行故障排除。 
+---
+= 故障排除和支持
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果在使用SolidFire Active IQ 或其他基于NetApp Element 软件的产品时遇到问题或遇到技术问题、您可以使用许多资源来帮助解决问题。
+
+* 搜索 https://kb.netapp.com/["知识库"^] 常见技术问题的解答。
+* 搜索 https://www.netapp.com/support-and-training/documentation/["NetApp 文档"^] 有关NetApp SolidFire 和NetApp HCI 的答案。
+* 您可以随时在线与我们联系： https://mysupport.netapp.com/site/["mysupport.netapp.com"^]。您可以随时提交问题。如果支持处于脱机状态、支持团队将在一个工作日内做出响应。
+* 请致电我们的支持团队：888.4.NETAPP (888.463.8277)。
+* link:task-active-iq-use-the-user-interface.html#provide-feedback["提供反馈"]。
+

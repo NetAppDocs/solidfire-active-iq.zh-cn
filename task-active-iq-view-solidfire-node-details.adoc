@@ -1,0 +1,97 @@
+---
+permalink: task-active-iq-view-solidfire-node-details.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, storage, node, details 
+summary: 了解如何在SolidFire Active IQ 中查看SolidFire 存储节点详细信息。 
+---
+= 查看SolidFire 存储节点详细信息
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+每个节点都是一组SSD。每个存储节点都附带CPU、网络、缓存和存储资源。存储节点资源会整合到一个节点集群中。
+
+在*节点*页面上、信息栏可快速概述以下数据：
+
+* MVIP ：管理虚拟 IP 地址
+* MVIP VLAN ID：MVIP的虚拟LAN ID
+* SVIP ：存储虚拟 IP 地址
+* SVIP VLAN ID：SVIP的虚拟LAN ID
+
+
+
+
+== 查看有关存储节点的信息
+
+以下信息可用于集群中的每个存储节点：
+
+[cols="25,75"]
+|===
+| 标题 | Description 
+
+
+| ID | 系统为节点生成的ID。 
+
+
+| Status  a| 
+节点的状态：
+
+* 运行状况：节点没有关联的严重错误。
+* offline：无法访问此节点。选择链接以查看错误日志。
+* fault：存在与此节点相关的错误。选择链接以查看错误日志。
+
+
+
+
+| Name | 系统生成的节点名称。 
+
+
+| Type | 显示节点的型号类型。 
+
+
+| version | 每个节点上运行的Element软件版本。 
+
+
+| 服务标签 | 分配给节点的唯一服务标签号。 
+
+
+| 序列号 | 分配给节点的唯一序列号。 
+
+
+| 管理IP | 为1GbE或10GbE网络管理任务分配给节点的管理IP MIP地址。 
+
+
+| 集群 IP | 分配给用于在同一集群中的节点之间进行通信的节点的集群IP地址。 
+
+
+| 存储IP | 分配给用于iSCSI网络发现和所有数据网络流量的节点的存储IP地址。 
+
+
+| 复制端口 | 节点上用于远程复制的端口。 
+
+
+| Role  a| 
+标识节点在集群中的角色：
+
+* Cluster Master ：执行集群范围管理任务并包含 MVIP 和 SVIP 的节点。
+* 集合节点：加入集群的节点。根据集群大小、有三个或五个集合节点。
+* Fibre Channel：集群中的FC节点。
+
+
+
+
+| 过去30分钟的平均IOPS | 过去30分钟对将此节点作为主节点的所有卷执行的平均IOPS数之和。 
+
+
+| 过去30分钟的平均吞吐量 | 过去30分钟对将此节点作为主节点的所有卷执行的平均吞吐量之和。 
+
+
+| 平均延迟(µs)过去30分钟 | 在过去30分钟内、对将此节点作为主节点的所有卷完成读写操作的平均时间(以微秒为单位)。要根据活动卷报告此指标、只会使用非零延迟值。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

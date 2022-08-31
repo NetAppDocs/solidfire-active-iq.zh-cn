@@ -1,0 +1,42 @@
+---
+permalink: task-active-iq-term-capacity.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, capacity, licensing 
+summary: 了解SolidFire Active IQ 中的容量许可页面。 
+---
+= 术语容量
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在*所有集群视图*中的*术语容量*页面上、您可以查看有关NetApp术语容量模型的信息。
+
+[cols="25,75"]
+|===
+| 标题 | Description 
+
+
+| 公司ID | 与许可证关联的公司ID。 
+
+
+| 公司名称 | 与许可证关联的公司的名称。 
+
+
+| licenses | 客户环境中的许可证数量。 
+
+
+| 集群 | 属于客户的集群及其ID的数量。 
+
+
+| 许可容量 | 客户环境中已获得容量许可的节点上的已分配容量。 
+
+
+| 已用容量 | 属于客户的所有集群的当前已用容量。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

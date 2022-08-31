@@ -1,0 +1,223 @@
+---
+permalink: task-active-iq-virtual-volumes.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, virtual, volumes 
+summary: 了解SolidFire Active IQ 中的虚拟卷页面。 
+---
+= 虚拟卷
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+在选定集群的侧面板上提供的* VVOL页面*中、您可以查看有关虚拟卷及其关联存储容器、协议端点、绑定和主机的信息。
+
+了解VVOL相关任务：
+
+* <<Virtual Volumes Details>>
+* <<Storage Containers>>
+* <<Protocol Endpoints>>
+* <<Hosts>>
+* <<Bindings>>
+
+
+
+
+== 虚拟卷详细信息
+
+选定集群的*虚拟卷*>*虚拟卷*页面提供了有关集群上每个活动虚拟卷的信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 卷 ID | 底层卷的 ID 。 
+
+
+| Snapshot ID | 底层卷快照的 ID 。如果虚拟卷不表示快照、则此值为零。 
+
+
+| 父虚拟卷ID | 父虚拟卷的虚拟卷 ID 。如果 ID 全部为零，则虚拟卷是独立的，不会链接到父卷。 
+
+
+| 虚拟卷ID | 虚拟卷的通用唯一标识符。 
+
+
+| Name | 分配给虚拟卷的名称。 
+
+
+| 子操作系统类型 | 与虚拟卷关联的操作系统。 
+
+
+| Type | 虚拟卷类型：配置、数据、内存、交换或其他。 
+
+
+| 访问 | 分配给虚拟卷的读/写权限。 
+
+
+| Size | 虚拟卷的大小、以GB或吉字节(GiB)为单位。 
+
+
+| Used capacity  a| 
+卷的当前已用容量：
+
+* 绿色=高达80%
+* 黄色=超过80%
+* 红色=高于95%
+
+
+
+
+| Snapshot | 关联快照的数量。选择要链接到快照副本详细信息的数字。 
+
+
+| 最小 IOPS | 虚拟卷的最小IOPS QoS设置。 
+
+
+| 最大 IOPS | 虚拟卷的最大IOPS QoS设置。 
+
+
+| 突发 IOPS | 虚拟卷的最大突发QoS设置。 
+
+
+| VMW_vmid | 以"VMW_"开头的字段中的信息由VMware定义。有关说明、请参见VMware文档。 
+
+
+| 创建时间 | 完成虚拟卷创建任务的时间。 
+
+
+| 操作 | 有关单个虚拟卷的详细信息、请选择垂直下拉菜单。 
+|===
+
+
+== 存储容器
+
+在选定集群的* VVols*>*存储容器*页面上、您可以查看集群上所有活动存储容器的以下信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 帐户 ID | 与存储容器关联的帐户的ID。 
+
+
+| Name | 存储容器的名称。 
+
+
+| Status  a| 
+存储容器的状态：
+
+* Active ：存储容器正在使用中。
+* locked ：存储容器已锁定。
+
+
+
+
+| PE类型 | 指示协议端点类型(SCSI是Element软件唯一可用的协议)。 
+
+
+| 存储容器ID | 虚拟卷存储容器的通用唯一标识符(UUID)。 
+
+
+| 活动虚拟卷 | 与存储容器关联的活动虚拟卷的数量。 
+|===
+
+
+== 协议端点
+
+选定集群的* VVols*>*协议端点*页面可提供协议端点信息、例如主提供程序ID、二级提供程序ID和协议端点ID。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 主提供程序ID | 主协议端点提供程序的 ID 。 
+
+
+| 二级提供程序ID | 二级协议端点提供程序的 ID 。 
+
+
+| 协议端点ID | 协议端点的 UUID 。 
+
+
+| 协议端点状态  a| 
+协议端点的状态：
+
+* Active ：协议端点正在使用中。
+* start ：协议端点正在启动。
+* failover ：协议端点已进行故障转移。
+* Reserved ：已保留协议端点。
+
+
+
+
+| 提供程序类型 | 协议端点提供程序的类型：primary或Secondary。 
+
+
+| SCSI NAA设备ID | NAA IEEE 注册扩展格式中协议端点的全局唯一 SCSI 设备标识符。 
+|===
+
+
+== 主机
+
+选定集群的* VVols*>*主机*页面提供了有关托管虚拟卷的VMware ESXi主机的信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 主机ID | 托管虚拟卷且为集群所知的 ESXi 主机的 UUID 。 
+
+
+| 绑定 | ESXi 主机绑定的所有虚拟卷的绑定 ID 。 
+
+
+| ESX集群ID | vSphere 主机集群 ID 或 vCenter GUID 。 
+
+
+| 启动程序IQN | 虚拟卷主机的启动程序 IQN 。 
+
+
+| SolidFire 协议端点ID | 当前对 ESXi 主机可见的协议端点。 
+|===
+
+
+== 绑定
+
+选定集群的* VVols*>*绑定*页面提供了有关每个虚拟卷的绑定信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 主机ID | 托管虚拟卷且为集群所知的 ESXi 主机的 UUID 。 
+
+
+| 协议端点ID | 协议端点的 UUID 。 
+
+
+| 协议端点的带内ID | 协议端点的 SCSI NAA 设备 ID 。 
+
+
+| 协议端点类型 | 指示协议端点类型(SCSI是Element软件唯一可用的协议)。 
+
+
+| VVol绑定ID | 虚拟卷的绑定 UUID 。 
+
+
+| VVol ID | 虚拟卷的UUID。 
+
+
+| VVol二级ID | 虚拟卷的二级 ID ，即 SCSI 二级 LUN ID 。 
+|===
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

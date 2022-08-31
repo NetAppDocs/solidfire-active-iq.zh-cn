@@ -1,0 +1,26 @@
+---
+permalink: task-active-iq-select-cluster-overview.html 
+sidebar: sidebar 
+keywords: solidfire, active, iq, cluster, information, specific 
+summary: 了解如何在SolidFire Active IQ 中查看集群信息。 
+---
+= 选择一个集群
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+从*选择集群*下拉列表中选择集群时、您可以查看特定集群的集群信息。每个集群信息类别均以表格形式或图形格式显示。
+
+从侧面板的*信息板*集群概述或*报告*下拉菜单中了解各种列表和筛选器：
+
+* link:task-active-iq-single-cluster-view-dashboard.html["单个集群视图信息板"]
+* link:task-active-iq-reporting-options.html["集群的报告选项"]
+
+
+
+
+== 了解更多信息
+
+https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]

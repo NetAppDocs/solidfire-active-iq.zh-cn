@@ -84,7 +84,6 @@
   <block id="f3bf056f68b8355023f77881422e7f1f" category="section-title">查看图形并选择日期范围</block>
   <block id="b7b7b61b3c4499c5f2b5308b977a1f92" category="paragraph">Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。</block>
   <block id="3cb48fc4c57bd3575e0c430007bfe074" category="paragraph">您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。</block>
-  <block id="0461c4fc34e0832d93b7333b2c5410c3" category="paragraph">此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：</block>
   <block id="71f0bed4fc7583649837eed2b8ee49c4" category="list-text">绿色=高达39%</block>
   <block id="a4965bbdc77616cfb8e9619447a55ffc" category="list-text">黄色= 40到59%</block>
   <block id="77b4dabdac23af0111f4e3fffcb2f6e5" category="list-text">红色=高于59%</block>
@@ -842,7 +841,6 @@
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：</block>
   <block id="7ae82c07422143d84f2406fe018d3f73" category="list-text">您的存储集群运行的是 NetApp Element 软件 11.3 或更高版本。</block>
   <block id="d95dde96d5f37c05bba91d1bff6d1a55" category="list-text">您已部署运行 11.3 或更高版本的管理节点。</block>
-  <block id="48999150d3601e85bd7d225657eb6811" category="list-text">您可以访问 Internet 。不能从没有外部连接的非公开站点使用Active IQ 收集器服务。</block>
   <block id="82a2b40d5c47d3f7c952492cdb40edd6" category="list-text">获取安装的基本资产 ID ：</block>
   <block id="2be2a7ca72e09c58cfb47c549453cdd1" category="list-text">在管理节点上打开清单服务 REST API UI ：</block>
   <block id="03917624197381e26d93d8783477b3bf" category="list-text">选择 * 授权 * 并完成以下操作：</block>
@@ -1027,4 +1025,6 @@
   <block id="08edd2123939d5309dced149763a50ee" category="sidebar">NetApp HCI</block>
   <block id="d60c463bb4096f3ed4bd1618626dfe10" category="sidebar">故障排除</block>
   <block id="0607bd332350ef193bc31ef1c742c508" category="sidebar">请联系技术支持</block>
+  <block id="1b4febc902d7bf51135668545d151a14" category="paragraph">此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：</block>
+  <block id="b28e179f94097b207a2dc9172aa4b4d0" category="list-text">您可以访问 Internet 。不能从没有外部连接的非公开站点使用 Active IQ 收集器服务。</block>
 </blocks>

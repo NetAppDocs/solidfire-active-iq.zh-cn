@@ -23,7 +23,7 @@ NOTE: 支持在Active IQ 中运行Google Chrome和Firefox浏览器。
 ** 您已部署运行 11.3 或更高版本的管理节点。
 
 
-* 您可以访问 Internet 。不能从没有外部连接的非公开站点使用Active IQ 收集器服务。
+* 您可以访问 Internet 。不能从没有外部连接的非公开站点使用 Active IQ 收集器服务。
 
 
 .步骤
@@ -98,6 +98,8 @@ https://<ManagementNodeIP>/mnode
 ... 选择 * 执行 * 。
 +
 只要资产发生更改， Active IQ 服务就会自动重新启动。修改资产会导致应用设置之前出现短暂的延迟。
+
+
 
 
 

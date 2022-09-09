@@ -15,7 +15,7 @@ summary: 了解SolidFire Active IQ 中的虚拟卷页面。
 
 了解VVOL相关任务：
 
-* <<Virtual Volumes Details>>
+* <<Virtual Volumes>>
 * <<Storage Containers>>
 * <<Protocol Endpoints>>
 * <<Hosts>>
@@ -24,7 +24,7 @@ summary: 了解SolidFire Active IQ 中的虚拟卷页面。
 
 
 
-== 虚拟卷详细信息
+== 虚拟卷
 
 选定集群的*虚拟卷*>*虚拟卷*页面提供了有关集群上每个活动虚拟卷的信息。
 

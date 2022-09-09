@@ -1,5 +1,5 @@
 ---
-permalink: task-active-iq-node-throttling.html 
+permalink: task-active-iq-throttling.html 
 sidebar: sidebar 
 keywords: solidfire, active, iq, nodes, throttling 
 summary: 了解SolidFire Active IQ 中的节点限制页面。 
@@ -11,7 +11,7 @@ summary: 了解SolidFire Active IQ 中的节点限制页面。
 
 
 [role="lead"]
-在选定集群的侧面板上提供的*节点*>*节点限制*页面上、您可以查看集群中节点的限制百分比。节点会在显示左侧以缩略图布局的形式列出、并根据选定时间范围的限制程度进行排序。
+在选定集群的侧面板上提供的"* QoS Management*>* Node Throttling*"页面中、您可以查看集群中节点的限制百分比。节点会在显示左侧以缩略图布局的形式列出、并根据选定时间范围的限制程度进行排序。
 
 了解如何查看节点限制信息：
 

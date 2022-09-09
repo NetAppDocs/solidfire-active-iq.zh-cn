@@ -1,17 +1,17 @@
 ---
-permalink: task-active-iq-active-nodes.html 
+permalink: task-active-iq-nodes.html 
 sidebar: sidebar 
 keywords: solidfire, active, iq, nodes 
 summary: '了解SolidFire Active IQ 中的"Active Nodes"页面。' 
 ---
-= 活动节点
+= 节点
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-在选定集群的侧面板上提供的*节点*>*活动节点*页面上、您可以查看集群中节点的信息。
+在选定集群的侧面板上的*节点*页面中、您可以查看集群中节点的信息。
 
 可用详细信息因系统而异：
 

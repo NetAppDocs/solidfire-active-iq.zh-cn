@@ -71,13 +71,10 @@
   <block id="b22459c42fa05b62fcf6efae76d217e0" category="list-text"><block ref="b22459c42fa05b62fcf6efae76d217e0" category="inline-link-macro-rx"></block></block>
   <block id="df583ae7ba964fd4806b55904da81813" category="inline-link-macro">警报</block>
   <block id="24065c72b6183812a2182740e9714ac5" category="list-text"><block ref="24065c72b6183812a2182740e9714ac5" category="inline-link-macro-rx"></block></block>
-  <block id="799a3fe6cff876fa3027852cc5707a2e" category="inline-link-macro">容量许可</block>
-  <block id="d670b82fe0337950f878b889f6933104" category="list-text"><block ref="d670b82fe0337950f878b889f6933104" category="inline-link-macro-rx"></block></block>
   <block id="d7d8c18bcc1cc8a4b125abd8f5edd2b9" category="inline-link-macro">术语容量</block>
   <block id="4eca902cc4ae3f106780131e01e88f4b" category="list-text"><block ref="4eca902cc4ae3f106780131e01e88f4b" category="inline-link-macro-rx"></block></block>
   <block id="0cefee73bdb85b3d4d3c8c689e1f1c0a" category="summary">了解SolidFire Active IQ 中的节点限制页面。</block>
   <block id="25a0046a8717b473571a227501cd74e2" category="doc">节点限制</block>
-  <block id="59fcde6598b4ab87af49810271746190" category="paragraph">在选定集群的侧面板上提供的*节点*&gt;*节点限制*页面上、您可以查看集群中节点的限制百分比。节点会在显示左侧以缩略图布局的形式列出、并根据选定时间范围的限制程度进行排序。</block>
   <block id="0df9a444c778c6506f58f43cc0edd434" category="paragraph">了解如何查看节点限制信息：</block>
   <block id="4f54b4cc4d3960f8f2d85ac01981e683" category="list-text"><block ref="597facc265a5c58f66b22d76ff98b78e" category="inline-xref-macro-rx"></block></block>
   <block id="48a5c77d4bcca65797ec6cae22e9596d" category="list-text"><block ref="3aad2e6e5736129db0c2a3093b04110c" category="inline-xref-macro-rx"></block></block>
@@ -118,8 +115,6 @@
   <block id="277d58ac537e0d48d56c275fffae51d7" category="doc">选择一个集群</block>
   <block id="eb72be22d7fc9772a8840871ba71b0a8" category="paragraph">从*选择集群*下拉列表中选择集群时、您可以查看特定集群的集群信息。每个集群信息类别均以表格形式或图形格式显示。</block>
   <block id="bf4336b6c177b0eea8653853a0f152fc" category="paragraph">从侧面板的*信息板*集群概述或*报告*下拉菜单中了解各种列表和筛选器：</block>
-  <block id="8dbfa38b833867442634cdf2a6756bca" category="inline-link-macro">单个集群视图信息板</block>
-  <block id="394c111301227a2139f9444cb09edb3f" category="list-text"><block ref="394c111301227a2139f9444cb09edb3f" category="inline-link-macro-rx"></block></block>
   <block id="bbb006833f01ec561077704bef27cb73" category="inline-link-macro">集群的报告选项</block>
   <block id="e8451b80e6ac689caa1caf052ce73f12" category="list-text"><block ref="e8451b80e6ac689caa1caf052ce73f12" category="inline-link-macro-rx"></block></block>
   <block id="f6fb41cae39c67dddfa257340be0abea" category="summary">了解SolidFire Active IQ 页面。</block>
@@ -204,7 +199,6 @@
   <block id="9b99bf7d2bfd4b09363304c166832734" category="cell">集群</block>
   <block id="331491aa4118975b5d832b3bf73155ca" category="cell">集群的数量及其ID、这些数量构成许可证的集群池。</block>
   <block id="3c222046ebbbdf4ee7fc9e22673e99f4" category="summary">了解SolidFire Active IQ 中的QoS建议页面。</block>
-  <block id="4bcb78be7a1595a1156ae7e0b3ed4052" category="paragraph">可从选定集群的侧面板访问的* QoS建议*页面可根据最新性能数据为集群提供每日服务质量(QoS)建议。只有Element软件11.x或更高版本上的集群才支持QoS建议。</block>
   <block id="b5634ec4fac0ffe7638c4b1bfc6bf2a0" category="paragraph">Active IQ 会根据近期活动的卷统计信息数据提出性能建议。建议侧重于卷的QoS最大和最小保证IOPS、只有在可能需要改进集群时、才会在UI中显示这些建议。</block>
   <block id="e7f0956807b7442475634b0ca02cf15a" category="inline-link">SolidFire 存储集群的性能和QoS</block>
   <block id="6163567ff604813c415da0727538ba46" category="list-text"><block ref="6163567ff604813c415da0727538ba46" category="inline-link-rx"></block></block>
@@ -325,12 +319,10 @@
   <block id="273520ae2b0e4a202c36942359c00981" category="summary">了解SolidFire Active IQ 中的虚拟卷页面。</block>
   <block id="aca90d0397c9490780bfa614d3eda075" category="paragraph">在选定集群的侧面板上提供的* VVOL页面*中、您可以查看有关虚拟卷及其关联存储容器、协议端点、绑定和主机的信息。</block>
   <block id="6fa75a2879ede33bb8dcbe609ed93225" category="paragraph">了解VVOL相关任务：</block>
-  <block id="8ee38da65565b437e30df8b4fc2120c6" category="list-text"><block ref="cc3a190077155e9f11e55893a04126b0" category="inline-xref-macro-rx"></block></block>
   <block id="20a800131c78b90a5f3cfe114f23578f" category="list-text"><block ref="5ded2a046dc5ca86637f3ae24cd70a11" category="inline-xref-macro-rx"></block></block>
   <block id="427c47678b1253b05de4cc969a1e69a1" category="list-text"><block ref="0438ed7546a9ccca6ea31cb94f48bb41" category="inline-xref-macro-rx"></block></block>
   <block id="3a711397217e10d79c4f76137db4c3fa" category="list-text"><block ref="9d7a5a13ad72f63838a097b34692bfd2" category="inline-xref-macro-rx"></block></block>
   <block id="330ab730707379ab7dd6073af2af7a37" category="list-text"><block ref="842b4663dd531fbec8e79946bdde515b" category="inline-xref-macro-rx"></block></block>
-  <block id="1cd4dd4eff6bc90708a6a05c5d116a57" category="section-title">虚拟卷详细信息</block>
   <block id="0b286bd72571d699ece37ec34b85f379" category="paragraph">选定集群的*虚拟卷*&gt;*虚拟卷*页面提供了有关集群上每个活动虚拟卷的信息。</block>
   <block id="fd6bac109d479ec3660fd4daeeded3a1" category="cell">底层卷的 ID 。</block>
   <block id="72d6eb7733941a274a474f7cc4d97973" category="cell">Snapshot ID</block>
@@ -739,12 +731,6 @@
   <block id="1e6c78e80b17c6b7b921a36a86593bc0" category="inline-link-macro">Element软件API文档</block>
   <block id="1b77c771de8f4f6c3baf80457d54f266" category="paragraph">在选定集群的*报告*下拉菜单的* API Collection*页面上、您可以查看NetApp SolidFire Active IQ 使用的API方法。有关这些方法的详细说明、请参见 <block ref="f22a227c10cf8287f1c4420ec53d0585" category="inline-link-macro-rx"></block>。</block>
   <block id="18cc1cea8bdf18884d35610fd16fdb77" category="admonition">除了这些方法之外、Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的Active IQ API集合列表、则必须联系NetApp支持部门。</block>
-  <block id="0c4d60a128e7714f565d66085537b6a9" category="summary">了解SolidFire Active IQ 中的节点页面。</block>
-  <block id="efff5bf65c7253a9f13c3da6e316514f" category="paragraph">在选定集群的侧面板提供的节点页面上、您可以查看集群中节点的信息。</block>
-  <block id="86d657b6d468a7d4b765611ea754e07d" category="paragraph">了解如何查看活动节点的信息以及选定节点的节点限制百分比：</block>
-  <block id="1fb1691d89c63b4c1b5243e04cd9f5b3" category="inline-link-macro">活动节点</block>
-  <block id="6c663e2ebd3f817914a7f20e8dd5b0dd" category="list-text"><block ref="6c663e2ebd3f817914a7f20e8dd5b0dd" category="inline-link-macro-rx"></block></block>
-  <block id="72fb384431f6bdc515c1be4fddf3b93e" category="list-text"><block ref="72fb384431f6bdc515c1be4fddf3b93e" category="inline-link-macro-rx"></block></block>
   <block id="bf807ea6b20dd5093c3aabab556b7151" category="summary">对SolidFire Active IQ 问题进行故障排除。</block>
   <block id="174a62637bdb98e952c7c5e781c86dc4" category="doc">故障排除和支持</block>
   <block id="d290f31130e082bed7a5e74006445b90" category="paragraph">如果在使用SolidFire Active IQ 或其他基于NetApp Element 软件的产品时遇到问题或遇到技术问题、您可以使用许多资源来帮助解决问题。</block>
@@ -864,7 +850,6 @@
   <block id="c9618f4b15d53501dee68300c1517890" category="inline-link-macro">SolidFire Active IQ</block>
   <block id="d54aa041fbc60813d85a10116f19acba" category="list-text">登录到 <block ref="4ebae971a9ad9014320b80bb2122d87f" category="inline-link-macro-rx"></block> 并确认您可以查看集群。</block>
   <block id="efaf46da503dff8a534048e87cf05c05" category="summary">了解SolidFire Active IQ 中的"Active Nodes"页面。</block>
-  <block id="aa2722f0dd149fa426d354dcd17c882b" category="paragraph">在选定集群的侧面板上提供的*节点*&gt;*活动节点*页面上、您可以查看集群中节点的信息。</block>
   <block id="efa3af2000f434495156bd711f91876d" category="paragraph">可用详细信息因系统而异：</block>
   <block id="a896398c6d72bfcee974918d75f31685" category="list-text"><block ref="6b768338154a8197cc67e41af532b78b" category="inline-xref-macro-rx"></block></block>
   <block id="f89f98ad3bf8dccd3b5dfa50eb3713e7" category="list-text"><block ref="5d3f50a6fbc21b3b38fa712473d01526" category="inline-xref-macro-rx"></block></block>
@@ -973,7 +958,6 @@
   <block id="c4ed6b7a93a993b1b380f32c53438c9d" category="cell">已用容量</block>
   <block id="231e178a523a4059cc5cd57dcea3d6a1" category="cell">属于客户的所有集群的当前已用容量。</block>
   <block id="fe39ad85a0161490bd3de016e8b78715" category="summary">了解SolidFire Active IQ 中选定集群的信息板页面。</block>
-  <block id="6f62e89a8e7dade71af4a03b96ca6f70" category="doc">单个集群视图信息板</block>
   <block id="b65c21930213ff455568ac2a7793fdae" category="paragraph">在选定集群的*信息板*页面上、您可以查看集群的详细信息、包括性能、容量和计算利用率。</block>
   <block id="2b56b60f878922093facd42284848a0c" category="inline-image-macro">更多详细信息</block>
   <block id="322d18de68603bba1e7afd4ecddcacba" category="paragraph">选择*显示详细信息*下拉菜单以查看有关集群的更多信息或选择 <block ref="c32549a97e18cfcab584bd16f681f71f" category="inline-image-macro-rx" type="image"></block> 图标可显示更详细的报告信息。您也可以将鼠标指针移动到图形线和报告数据上方以显示其他详细信息。</block>
@@ -1016,7 +1000,6 @@
   <block id="845fd12e3c31b51563647c4572d65ac3" category="cell">存储性能</block>
   <block id="5106cb7ea917f7c22d63d5d6d8e17c02" category="cell">此图显示了IOPS和吞吐量。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="sidebar">概述</block>
-  <block id="23de2a1ae75bcf2f4de17d30fe859a05" category="sidebar">所有集群视图信息板</block>
   <block id="c5562ce2e22a86c247849904ecef3dc8" category="sidebar">报告</block>
   <block id="9949f61a3827392769230f94e185dd46" category="sidebar">使用SolidFire Active IQ 工具</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
@@ -1027,4 +1010,18 @@
   <block id="0607bd332350ef193bc31ef1c742c508" category="sidebar">请联系技术支持</block>
   <block id="1b4febc902d7bf51135668545d151a14" category="paragraph">此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：</block>
   <block id="b28e179f94097b207a2dc9172aa4b4d0" category="list-text">您可以访问 Internet 。不能从没有外部连接的非公开站点使用 Active IQ 收集器服务。</block>
+  <block id="c357af7a99b77ac25c548aef6df0d1a8" category="list-text"><block ref="c357af7a99b77ac25c548aef6df0d1a8" category="inline-link-macro-rx"></block></block>
+  <block id="16beb139f89865caa5bdd51a5b9fadcd" category="summary">了解SolidFire Active IQ 中的QoS管理页面。</block>
+  <block id="d57c256b226c8f444c1c9b3956085ad8" category="doc">QoS管理</block>
+  <block id="5085a6d22e1a79b7b82997ea97e58d72" category="paragraph">在选定集群的侧面板上提供的* QoS管理*页面中、您可以查看有关集群中节点的QoS建议和限制的信息。</block>
+  <block id="be4ba82940f402388451f5cc834ece73" category="paragraph">了解如何查看有关选定节点的QoS建议和限制的信息：</block>
+  <block id="5259ae4afb5996ff48788b2fa720114c" category="inline-link-macro">建议</block>
+  <block id="a360a35f96153959d5b43412ede22440" category="list-text"><block ref="a360a35f96153959d5b43412ede22440" category="inline-link-macro-rx"></block></block>
+  <block id="74372e2fdee501a3a9fa25f6ef28ec0a" category="list-text"><block ref="74372e2fdee501a3a9fa25f6ef28ec0a" category="inline-link-macro-rx"></block></block>
+  <block id="00c4d35e3b52aa64cb1fc6084c8a6b2e" category="inline-link-macro">单个集群视图信息板</block>
+  <block id="926bcde67df442aed657539d0f151a77" category="list-text"><block ref="926bcde67df442aed657539d0f151a77" category="inline-link-macro-rx"></block></block>
+  <block id="36d2e075918140efadafcbd5672eb0ad" category="paragraph">可从选定集群的侧面板访问的"* QoS Management*&gt;* recommendations*"页面根据最新性能数据为集群提供每日服务质量(QoS)建议。只有Element软件11.x或更高版本上的集群才支持QoS建议。</block>
+  <block id="4408a36df9e9ed5aa8dd852943967324" category="list-text"><block ref="370537d09346032450865c36be0b772b" category="inline-xref-macro-rx"></block></block>
+  <block id="b01d0fd0e15cd69ca0c99c35e0db5116" category="paragraph">在选定集群的侧面板上的*节点*页面中、您可以查看集群中节点的信息。</block>
+  <block id="9b549dfa7e57d3b25fa9e46fe3685b2b" category="paragraph">在选定集群的侧面板上提供的"* QoS Management*&gt;* Node Throttling*"页面中、您可以查看集群中节点的限制百分比。节点会在显示左侧以缩略图布局的形式列出、并根据选定时间范围的限制程度进行排序。</block>
 </blocks>

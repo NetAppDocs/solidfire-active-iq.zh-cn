@@ -47,13 +47,7 @@ sidebar:
         - title: 报告
           url: "/task-active-iq-reporting-options.html"
       - title: 节点
-        entries:
-        - title: 概述
-          url: "/task-active-iq-nodes-overview.html"
-        - title: 活动节点
-          url: "/task-active-iq-active-nodes.html"
-        - title: 节点限制
-          url: "/task-active-iq-node-throttling.html"
+        url: "/task-active-iq-nodes.html"
       - title: 驱动器
         url: "/task_active_iq_drives.html"
       - title: Volumes
@@ -68,8 +62,14 @@ sidebar:
         url: "/task_active_iq_replication.html"
       - title: 虚拟卷
         url: "/task-active-iq-virtual-volumes.html"
-      - title: QoS建议
-        url: "/task-active-iq-qos-recommendations.html"
+      - title: QoS管理
+        entries:
+        - title: 概述
+          url: "/task-active-iq-qos-management-overview.html"
+        - title: 建议
+          url: "/task-active-iq-recommendations.html"
+        - title: 节点限制
+          url: "/task-active-iq-throttling.html"
       - title: 虚拟机
         url: "/task-active-iq-virtual-machines.html"
       - title: VMware警报

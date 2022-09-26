@@ -38,7 +38,7 @@ NOTE: 只有NetApp HCI 集群才会显示"VMware Alarms*"页面。
 | Description | VMware警报的问题描述。 
 
 
-| 触发时间 | 在Active IQ 中触发警报的时间、而不是在集群本身上。 
+| 触发时间 | 在SolidFire Active IQ 中触发警报的时间、而不是在集群本身上。 
 |===
 
 

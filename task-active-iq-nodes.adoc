@@ -15,8 +15,8 @@ summary: '了解SolidFire Active IQ 中的"Active Nodes"页面。'
 
 可用详细信息因系统而异：
 
-* <<View SolidFire storage node details>>
-* <<View NetApp HCI storage and compute node details>>
+*  SolidFire storage node details
+*  NetApp HCI storage and compute node details
 
 
 
@@ -111,8 +111,8 @@ summary: '了解SolidFire Active IQ 中的"Active Nodes"页面。'
 
 了解如何查看有关NetApp HCI 集群中存储节点和计算节点的信息：
 
-* <<View information about storage nodes>>
-* <<View information about compute nodes>>
+*  information about storage nodes
+*  information about compute nodes
 
 
 

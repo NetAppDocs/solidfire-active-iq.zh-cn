@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: solidfire, active, iq, enable, reporting 
 summary: 了解SolidFire Active IQ 中的UI特性和功能。 
 ---
-= 使用Active IQ UI
+= 使用SolidFire Active IQ UI
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,20 +13,20 @@ summary: 了解SolidFire Active IQ 中的UI特性和功能。
 [role="lead"]
 了解中的UI特性和功能 link:https://activeiq.solidfire.com/["SolidFire Active IQ (需要登录)"^]：
 
-* <<Use filters>>
-* <<Sort lists>>
-* <<View graphs and select date ranges>>
-* <<Export list views and report data>>
-* <<Select a cluster>>
-* <<Icon reference>>
-* <<Provide feedback>>
+*  filters
+*  lists
+*  graphs and select date ranges
+*  list views and report data
+*  a cluster
+*  reference
+*  feedback
 
 
 
 
 == 使用筛选器
 
-您可以在Active IQ 中对页面上的列表信息进行排序和筛选。在查看列表(例如节点、驱动器、卷等)时、您可以使用筛选器功能集中显示信息并使其更易于显示在屏幕上。
+您可以在SolidFire Active IQ 中对页面上的列表信息进行排序和筛选。在查看列表(例如节点、驱动器、卷等)时、您可以使用筛选器功能集中显示信息并使其更易于显示在屏幕上。
 
 .步骤
 . 查看列表信息时、请选择*筛选器*。
@@ -53,7 +53,7 @@ NOTE: 某些表提供了从视图中排除列的选项。为获得最佳结果�
 
 == 对列表进行排序
 
-您可以在Active IQ UI中的某些页面上按一个或多个列对列表信息进行排序。这有助于您在屏幕上排列所需的信息。
+您可以在SolidFire Active IQ UI中的某些页面上按一个或多个列对列表信息进行排序。这有助于您在屏幕上排列所需的信息。
 
 .步骤
 . 要对单个列进行排序、请选择列标题、直到信息按所需顺序排序为止。
@@ -72,7 +72,7 @@ NOTE: 某些表提供了从视图中排除列的选项。为获得最佳结果�
 
 == 查看图形并选择日期范围
 
-Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。
+SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。
 
 您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。如果可用、可通过选择左侧的缩略图布局在图形之间切换。这些布局也可以隐藏。
 
@@ -97,10 +97,10 @@ image:graphs_and_date_ranges.PNG["图形和日期范围"]
 
 == 选择一个集群
 
-在Active IQ 中、您可以查看有关环境中单个集群的信息。
+在SolidFire Active IQ 中、您可以查看有关环境中单个集群的信息。
 
 .步骤
-. 从Active IQ 信息板中、选择*选择集群*。
+. 从SolidFire Active IQ 信息板中、选择*选择集群*。
 . 下拉菜单列出了您可以使用的任何集群。
 . 使用搜索字段查找所需集群或最近查看的集群。
 . 选择名称以选择集群。
@@ -110,7 +110,7 @@ image:graphs_and_date_ranges.PNG["图形和日期范围"]
 
 == 图标参考
 
-在查看Active IQ 的UI时、您可能会看到以下图标。
+查看SolidFire Active IQ UI时、您可能会看到以下图标。
 
 [cols="25,75"]
 |===
@@ -161,7 +161,7 @@ image:more_details.PNG["更多详细信息图标"]
 
 == 提供反馈
 
-您可以使用可通过整个Active IQ 访问的电子邮件反馈选项来帮助改进UI并解决任何UI问题。
+您可以使用可通过整个SolidFire Active IQ 访问的电子邮件反馈选项来帮助改进UI并解决任何UI问题。
 
 .步骤
 . 从用户界面的任何页面中、选择 image:menu.PNG["菜单图标"] 图标、然后选择*反馈*。

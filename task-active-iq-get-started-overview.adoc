@@ -14,7 +14,7 @@ summary: 了解SolidFire Active IQ 入门。
 SolidFire Active IQ 工具可以轻松地从任意位置监控容量和性能、并了解集群运行状况。无论您如何使用SolidFire Active IQ 、在开始使用之前、都需要了解以下几点：
 
 * link:concept-active-iq-learn-about-active-iq.html["了解SolidFire Active IQ"]：您应了解SolidFire Active IQ 的工作原理及其收集的信息。
-* link:task-active-iq-enable-reporting.html["启用SolidFire Active IQ 报告"]：必须在管理节点上启用Active IQ 报告功能、Active IQ 服务器才能连接到集群并接收集群信息。
+* link:task-active-iq-enable-reporting.html["启用SolidFire Active IQ 报告"]：必须在管理节点上启用SolidFire Active IQ 报告功能、Active IQ 服务器才能连接到集群并接收集群信息。
 * link:task-active-iq-use-the-user-interface.html["使用SolidFire Active IQ UI"]：了解新增或增强的功能、例如筛选、排序、导出数据和集群选择。
 
 

@@ -13,9 +13,9 @@ summary: 了解如何在SolidFire Active IQ 中查看卷详细信息。
 [role="lead"]
 在*卷*页面中、您可以查看有关活动卷、单个卷和性能图形的详细信息：
 
-* <<View active volume details>>
-* <<View individual volume details>>
-* <<View individual volume performance graphs>>
+*  active volume details
+*  individual volume details
+*  individual volume performance graphs
 
 
 
@@ -73,13 +73,13 @@ summary: 了解如何在SolidFire Active IQ 中查看卷详细信息。
 | 突发 IOPS | 在短时间内允许的最大IOPS数。 
 
 
-| 过去30分钟的平均IOPS | 过去30分钟对将此节点作为主节点的所有卷执行的平均IOPS数之和。 
+| 过去30分钟的平均IOPS | 对将此节点作为主节点的所有卷执行的平均IOPS数。IOPS会在集群端以500毫秒的间隔收集。SolidFire Active IQ 会按60秒的间隔收集这些值。对于每个卷、平均IOPS是根据过去30分钟收集的SolidFire Active IQ 值计算得出的。 
 
 
-| 过去30分钟的平均吞吐量 | 过去30分钟对将此节点作为主节点的所有卷执行的平均吞吐量之和。 
+| 过去30分钟的平均吞吐量 | 对将此节点作为主节点的所有卷执行的平均吞吐量。在集群端以500毫秒的间隔收集吞吐量。SolidFire Active IQ 会按60秒的间隔收集这些值。对于每个卷、平均吞吐量是根据过去30分钟收集的SolidFire Active IQ 值计算得出的。 
 
 
-| 过去30分钟的平均延迟(µs) | 在过去30分钟内、对将此节点作为主节点的所有卷完成读写操作的平均时间(以微秒为单位)。 
+| 过去30分钟的平均延迟(µs) | 对将此节点作为主节点的所有卷完成读写操作的平均时间(以微秒为单位)。延迟在集群端以500毫秒为间隔测量。SolidFire Active IQ 会按60秒的间隔收集这些值。对于每个卷、平均延迟是根据过去30分钟收集的SolidFire Active IQ 值计算得出的。有关详细信息，请参见此 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_is_read_and_write_latency_measured_in_Element_Software_%3F["知识库文章"^]。 
 
 
 | 快照 | 为卷创建的快照数量。 
@@ -127,7 +127,7 @@ summary: 了解如何在SolidFire Active IQ 中查看卷详细信息。
 | 平均吞吐量 | 过去30分钟对卷执行的平均吞吐量。 
 
 
-| 平均延迟 | 过去30分钟内完成卷读写操作的平均时间(以微秒为单位)。 
+| 平均延迟 | 过去30分钟内完成卷读写操作的平均时间(以微秒为单位)。有关详细信息，请参见此 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_is_read_and_write_latency_measured_in_Element_Software_%3F["知识库文章"^]。 
 
 
 2+| 您可以从*显示卷详细信息*下拉菜单查看其他详细信息。 

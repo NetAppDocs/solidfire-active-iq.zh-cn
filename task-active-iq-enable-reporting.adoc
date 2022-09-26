@@ -11,10 +11,10 @@ summary: 了解如何在管理节点上启用SolidFire Active IQ 报告功能。
 
 
 [role="lead"]
-如果您在安装或升级期间尚未启用SolidFire Active IQ 报告功能、则必须先在管理节点上启用此功能、然后Active IQ 服务器才能从管理节点接收集群的数据有效负载。成功设置连接后、集群会向Active IQ 服务器发送信息。然后、您可以在Active IQ UI中查看集群、其中会显示集群信息。
+如果您在安装或升级期间尚未启用SolidFire Active IQ 报告功能、则必须先在管理节点上启用此功能、然后SolidFire Active IQ 服务器才能从管理节点接收集群的数据有效负载。成功设置连接后、集群会向SolidFire Active IQ 服务器发送信息。然后、您可以在SolidFire Active IQ UI中查看集群、其中会显示集群信息。
 
 
-NOTE: 支持在Active IQ 中运行Google Chrome和Firefox浏览器。
+NOTE: 支持在SolidFire Active IQ 中运行Google Chrome和Firefox浏览器。
 
 .开始之前
 * Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：

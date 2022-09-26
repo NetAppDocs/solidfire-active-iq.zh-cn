@@ -13,8 +13,8 @@ summary: 了解如何在SolidFire Active IQ 中查看快照详细信息和快照
 [role="lead"]
 了解如何查看有关快照和快照计划的信息：
 
-* <<Snapshots>>
-* <<Snapshot Schedules>>
+* 
+*  Schedules
 
 
 

@@ -79,7 +79,6 @@
   <block id="4f54b4cc4d3960f8f2d85ac01981e683" category="list-text"><block ref="597facc265a5c58f66b22d76ff98b78e" category="inline-xref-macro-rx"></block></block>
   <block id="48a5c77d4bcca65797ec6cae22e9596d" category="list-text"><block ref="3aad2e6e5736129db0c2a3093b04110c" category="inline-xref-macro-rx"></block></block>
   <block id="f3bf056f68b8355023f77881422e7f1f" category="section-title">查看图形并选择日期范围</block>
-  <block id="b7b7b61b3c4499c5f2b5308b977a1f92" category="paragraph">Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。</block>
   <block id="3cb48fc4c57bd3575e0c430007bfe074" category="paragraph">您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。</block>
   <block id="71f0bed4fc7583649837eed2b8ee49c4" category="list-text">绿色=高达39%</block>
   <block id="a4965bbdc77616cfb8e9619447a55ffc" category="list-text">黄色= 40到59%</block>
@@ -110,7 +109,6 @@
   <block id="99678f7a117bc8aabf09db380162078b" category="cell">VMware警报的名称。</block>
   <block id="a27b6647124cd63c0c6175743b633c3e" category="cell">VMware警报的问题描述。</block>
   <block id="598b092e27986b9b865df094fe4948b9" category="cell">触发时间</block>
-  <block id="677b17da2c12cb51b4885efd8fc8d12e" category="cell">在Active IQ 中触发警报的时间、而不是在集群本身上。</block>
   <block id="3e029ce2c3d8433b34f693041956192d" category="summary">了解如何在SolidFire Active IQ 中查看集群信息。</block>
   <block id="277d58ac537e0d48d56c275fffae51d7" category="doc">选择一个集群</block>
   <block id="eb72be22d7fc9772a8840871ba71b0a8" category="paragraph">从*选择集群*下拉列表中选择集群时、您可以查看特定集群的集群信息。每个集群信息类别均以表格形式或图形格式显示。</block>
@@ -124,7 +122,6 @@
   <block id="d8ca343535696fc3bc6e295975432a7c" category="list-text"><block ref="d8ca343535696fc3bc6e295975432a7c" category="inline-link-macro-rx"></block></block>
   <block id="15ac47d735d2abb9f151cb6f3bd87f56" category="list-text"><block ref="15ac47d735d2abb9f151cb6f3bd87f56" category="inline-link-macro-rx"></block></block>
   <block id="187c6ad3a74cc93ac6c2229d398e383e" category="inline-link-macro">节点</block>
-  <block id="81da7f2200669b74dbe1d84983bfe4dc" category="list-text"><block ref="81da7f2200669b74dbe1d84983bfe4dc" category="inline-link-macro-rx"></block></block>
   <block id="63a6b9b3b5de50d32228700cfe042610" category="inline-link-macro">驱动器</block>
   <block id="1c968709a3462ab0df1449c2d11bde23" category="list-text"><block ref="1c968709a3462ab0df1449c2d11bde23" category="inline-link-macro-rx"></block></block>
   <block id="c6f01c78bfe0a0a495cb5d3ed77824a9" category="inline-link-macro">Volumes</block>
@@ -133,8 +130,6 @@
   <block id="c0ce04e9e4abab6be41f5db5258d5c42" category="list-text"><block ref="c0ce04e9e4abab6be41f5db5258d5c42" category="inline-link-macro-rx"></block></block>
   <block id="86a60eaa1d2754d3ef920fff5bdf0e91" category="inline-link-macro">虚拟卷</block>
   <block id="44273fb1c66e463d49a94f9db5f32122" category="list-text"><block ref="44273fb1c66e463d49a94f9db5f32122" category="inline-link-macro-rx"></block></block>
-  <block id="cfadbebab98b6929c6f6db3fddfc6860" category="inline-link-macro">QoS建议</block>
-  <block id="3220a3924ad848bdfae6c4beb49a4df0" category="list-text"><block ref="3220a3924ad848bdfae6c4beb49a4df0" category="inline-link-macro-rx"></block></block>
   <block id="1b031407a74cfe3989b3fe7b4a7d1a12" category="inline-link-macro">虚拟机(仅限NetApp HCI 集群)</block>
   <block id="f00a95482a80a821b5463f824bd414ef" category="list-text"><block ref="f00a95482a80a821b5463f824bd414ef" category="inline-link-macro-rx"></block></block>
   <block id="a9ddb5f12cc652ccb3d0e88c6a1c5a53" category="inline-link-macro">VMware警报(仅限NetApp HCI 集群)</block>
@@ -199,13 +194,11 @@
   <block id="9b99bf7d2bfd4b09363304c166832734" category="cell">集群</block>
   <block id="331491aa4118975b5d832b3bf73155ca" category="cell">集群的数量及其ID、这些数量构成许可证的集群池。</block>
   <block id="3c222046ebbbdf4ee7fc9e22673e99f4" category="summary">了解SolidFire Active IQ 中的QoS建议页面。</block>
-  <block id="b5634ec4fac0ffe7638c4b1bfc6bf2a0" category="paragraph">Active IQ 会根据近期活动的卷统计信息数据提出性能建议。建议侧重于卷的QoS最大和最小保证IOPS、只有在可能需要改进集群时、才会在UI中显示这些建议。</block>
   <block id="e7f0956807b7442475634b0ca02cf15a" category="inline-link">SolidFire 存储集群的性能和QoS</block>
   <block id="6163567ff604813c415da0727538ba46" category="list-text"><block ref="6163567ff604813c415da0727538ba46" category="inline-link-rx"></block></block>
   <block id="50ee1f895e7e284e9dd0f8f045bc11a2" category="inline-link">创建和管理卷 QoS 策略</block>
   <block id="47c1cc14a918686ff80203d8d1e3607c" category="list-text"><block ref="47c1cc14a918686ff80203d8d1e3607c" category="inline-link-rx"></block></block>
   <block id="c1611363cb08bee418a62fbfb67269a0" category="summary">了解SolidFire Active IQ 中的UI特性和功能。</block>
-  <block id="be16873972b6107404555247ffe64f79" category="doc">使用Active IQ UI</block>
   <block id="f1a747b1e6d6c145fc34a1bf342de1e5" category="paragraph">了解中的UI特性和功能 <block ref="69d38b4c8b518e174614111f3e530167" category="inline-link-macro-rx"></block>：</block>
   <block id="75b5f200ff2e07a1cd3c280094c30efa" category="list-text"><block ref="f0659da1107154bd84c9b38aff0b247a" category="inline-xref-macro-rx"></block></block>
   <block id="0c1d112f9709394d300cbeaa66450a9a" category="list-text"><block ref="7fe5ed762c45abe7d0470e2a89b1a892" category="inline-xref-macro-rx"></block></block>
@@ -214,7 +207,6 @@
   <block id="16df60c28b1f6e1a615a049c6108358e" category="list-text"><block ref="bfbbec3472fd971f56fdb3fbab3e87d8" category="inline-xref-macro-rx"></block></block>
   <block id="1a6488574db4303b10848152736e8e55" category="list-text"><block ref="1f6092bfe2d74192af9ae009324aa099" category="inline-xref-macro-rx"></block></block>
   <block id="aa01e24e60b9724b9b233b2a1e85f950" category="section-title">使用筛选器</block>
-  <block id="5d26e76a9cf020fc45752e6bd4299da5" category="paragraph">您可以在Active IQ 中对页面上的列表信息进行排序和筛选。在查看列表(例如节点、驱动器、卷等)时、您可以使用筛选器功能集中显示信息并使其更易于显示在屏幕上。</block>
   <block id="07090d1b9cebf025d6cde2aae5e03df7" category="list-text">查看列表信息时、请选择*筛选器*。</block>
   <block id="cdbd324b57aa494a017f6e074e75201f" category="list-text">从下拉菜单中选择要用作筛选依据的列名称。</block>
   <block id="f63739fda10056be3da6baf6e8dd41e2" category="list-text">为列选择一个约束。</block>
@@ -226,7 +218,6 @@
   <block id="fa5e680730153cba5aa2eea9fe92df91" category="list-text">(可选)选择(* x *)删除筛选器并显示未筛选的列表信息。</block>
   <block id="d8f25e98301a184a517a02a45e877668" category="admonition">某些表提供了从视图中排除列的选项。为获得最佳结果、请选择*列*以确认设置筛选器时所有必需列均显示。</block>
   <block id="0afcb3a7292642b6ea0c8552bcdda4b4" category="section-title">对列表进行排序</block>
-  <block id="6feb28d1635888c4fa07a4bae13d10e0" category="paragraph">您可以在Active IQ UI中的某些页面上按一个或多个列对列表信息进行排序。这有助于您在屏幕上排列所需的信息。</block>
   <block id="b2fe74238164b5710d7de83add293f15" category="list-text">要对单个列进行排序、请选择列标题、直到信息按所需顺序排序为止。</block>
   <block id="8966a96d9cb66f42b54a27af655b2dde" category="list-text">要对多个列进行排序、请执行以下步骤：</block>
   <block id="5086a34fd2d544eff43f823c0abb1a5e" category="list-text">选择要排序的第一列的列标题、直到信息按所需顺序排序为止。</block>
@@ -240,13 +231,10 @@
   <block id="9dc1a16b99af819147fc3f744fc8a213" category="paragraph">您可以将整个列表视图或图形数据导出为逗号分隔值(CSV)格式。对于某些列表、例如集群或节点、您可以选择要导出的列；默认情况下、将选择显示的列。如果存在特定排序顺序或使用筛选器限制显示的条目、则会在导出的文件中保留该排序顺序和筛选器。</block>
   <block id="b09eaa1277bfee2694f0a182ed0f097b" category="list-text">在列表视图或图形中、选择 <block ref="045b9f10f68ab62e06536e6b96ca72ee" category="inline-image-macro-rx" type="image"></block> 图标。</block>
   <block id="979c617c7763705237acbbc078c557d0" category="section-title">选择一个集群</block>
-  <block id="e5fad98e0daae45b4573102e78e1e75c" category="paragraph">在Active IQ 中、您可以查看有关环境中单个集群的信息。</block>
-  <block id="106cd3aec5e4e5fa0e87d54a10970b5a" category="list-text">从Active IQ 信息板中、选择*选择集群*。</block>
   <block id="3227b9c5b489035bbfe108ec539744f8" category="list-text">下拉菜单列出了您可以使用的任何集群。</block>
   <block id="5849fbc4cd9d8ff6190306213ca2cd61" category="list-text">使用搜索字段查找所需集群或最近查看的集群。</block>
   <block id="86a2da85271fc1113b1bf591705f342e" category="list-text">选择名称以选择集群。</block>
   <block id="6c2fc87d25afe10c773420717eeb2df8" category="section-title">图标参考</block>
-  <block id="2af69473b0142d749e9f31cb03d74915" category="paragraph">在查看Active IQ 的UI时、您可能会看到以下图标。</block>
   <block id="817434295a673aed431435658b65d9a7" category="cell">图标。</block>
   <block id="9e36976cde9f2ece8b67172092ddc794" category="inline-image-macro">刷新图标</block>
   <block id="6044018059a6046033f39c1dce734735" category="paragraph"><block ref="6044018059a6046033f39c1dce734735" category="inline-image-macro-rx" type="image"></block></block>
@@ -273,7 +261,6 @@
   <block id="45ebbd5bdb9477285076cbc10c602f1d" category="paragraph"><block ref="45ebbd5bdb9477285076cbc10c602f1d" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ea2e81a1b728b000d0a80f1b7adb8d39" category="cell">选择以了解更多详细信息。</block>
   <block id="1ae8a55f317d3b2570e79a0b4a668040" category="section-title">提供反馈</block>
-  <block id="7ad9169e449c48f53920205d4212004e" category="paragraph">您可以使用可通过整个Active IQ 访问的电子邮件反馈选项来帮助改进UI并解决任何UI问题。</block>
   <block id="0c6ab2fbcdd7cedaa7510d6167c60089" category="list-text">从用户界面的任何页面中、选择 <block ref="0394d5cd9adafeb64d44c535a81d6cea" category="inline-image-macro-rx" type="image"></block> 图标、然后选择*反馈*。</block>
   <block id="e392fa2dbe4893eaf358507add7c6068" category="list-text">在电子邮件的邮件正文中输入相关信息。</block>
   <block id="ed6e35e068e0c344e24d1f96c26dbafd" category="list-text">附加任何有用的屏幕截图。</block>
@@ -415,7 +402,6 @@
   <block id="21069985229913cfdaf583d12e439f5c" category="paragraph">了解如何筛选和了解UI中显示的VM数据。</block>
   <block id="12e08d602c4e243c7e7f50806c91254f" category="section-title">查看虚拟机详细信息</block>
   <block id="8ea1b2897da42a4661881c12f4c2e0d5" category="paragraph">可从选定集群的侧面板访问的*虚拟机*页面提供了有关与该集群关联的每个活动虚拟机的信息。</block>
-  <block id="d1a4d22bcbd84f65a5e8493bd0648a37" category="paragraph">除了所有Active IQ 页面上提供的传统筛选选项之外、*虚拟机*页面还提供了快速筛选按钮、您可以选择这些按钮来确定常见的VM可用性状态。</block>
   <block id="3977b1efa79b62267b5296bdda767f96" category="paragraph">信息栏可快速概述以下数据：</block>
   <block id="8fc013cf555a5949086eb32f3d1c8477" category="list-text">Virtual Machines：与存储集群关联的VM的数量和各种可用性状态。</block>
   <block id="5c5bc2732adae8204719332c2130b4ea" category="list-text">status：VM的警告或错误数。</block>
@@ -503,7 +489,6 @@
   <block id="12466c75ab546c4ddbc461e4de8e07db" category="list-text">*网络*：禁止显示与网络配置和运行状况相关的警报。</block>
   <block id="0db1cce788620df7a4c7d689ff100e01" category="list-text">*电源*：禁止显示电源冗余警报。它不会禁止在完全断电时发生的_nodeOffline警报。</block>
   <block id="8afa45cebae7b4d6b5e5612895162c7f" category="cell">选择垂直下拉菜单以查看选定策略的编辑和删除选项。</block>
-  <block id="49d358016a7837e9dc8880930fffab76" category="paragraph">您可以通过Active IQ 中的*所有集群视图*创建警报策略来监控信息。通过警报策略、您可以收到有关安装中一个或多个集群的状态或性能事件的通知、以便可以在发生更严重的事件之前或对此事件做出响应。</block>
   <block id="36ed984fd18203c62c9a269a95420a4e" category="list-text">选择*警报*&gt;*策略*。</block>
   <block id="41025e9c551610edae39a167ecbe1b73" category="list-text">选择 * 创建策略 * 。</block>
   <block id="7ed81deb3a22d8d97542963bd55c0baf" category="list-text">从*策略类型*列表中选择警报类型。请参见 <block ref="6d8e22bf2b0db32d52a030f270d32ede" category="inline-xref-macro-rx"></block>。</block>
@@ -536,7 +521,6 @@
   <block id="164ad6bd1a9ceba54f457dfe0ce85008" category="cell">可配置空间</block>
   <block id="596ec0bf4bea008d7bd36761f1e0cae3" category="cell">当可配置的集群空间小于指定百分比时发送通知。</block>
   <block id="4dab6622470bb0314e94cb50bbe0cc21" category="cell">收集器未报告</block>
-  <block id="d4172f749d3caf851de49361bf395028" category="cell">如果管理节点上运行的Active IQ 收集器在指定的持续时间内无法向Active IQ 发送数据、则发送通知。</block>
   <block id="12d4e8c195d420a94eb66a6817679969" category="cell">驱动器磨损</block>
   <block id="93cd8a60fc9b91519dd8d2d115514856" category="cell">当集群中的驱动器剩余耗损或预留空间小于指定百分比时发送通知。</block>
   <block id="c5b0aacb61d57bd9ceefa1b1c235fbfb" category="cell">iSCSI会话</block>
@@ -544,7 +528,6 @@
   <block id="a810f7ffd8b3ba7fc2959a7fd14c6ec1" category="cell">机箱弹性</block>
   <block id="77842a19e3e2ead223bcccb4cd8836c1" category="cell">当集群的已用空间大于用户指定的百分比时发送通知。您应选择一个足以在达到集群故障恢复能力阈值之前提前发出通知的百分比。达到此阈值后、集群将无法再自动从机箱级别故障中恢复。</block>
   <block id="779eeaf551ed09558987b7ac98255734" category="cell">VMware警报</block>
-  <block id="c9184508136db9cf47dc30aa2804ded2" category="cell">在触发VMware警报并向Active IQ 报告时发送通知。</block>
   <block id="702a419d8a0eab07e38ee09f58a29bbe" category="cell">自定义保护域弹性</block>
   <block id="9fae5454809c4b11e59aed2ffb0787ed" category="cell">当已用空间增加到超过自定义保护域故障恢复能力阈值的指定百分比时、系统会发送通知。如果此百分比达到100、则在自定义保护域发生故障后、存储集群没有足够的可用容量进行自我修复。</block>
   <block id="cc775eb9d20d6f35d83ef2b8af721a64" category="cell">节点核心/崩溃转储文件</block>
@@ -600,7 +583,6 @@
   <block id="54337ee0f200dfcaa388f569168f76f4" category="list-text">对于单个集群、请选择该集群的"Actions"菜单、然后选择* End Suppression *。</block>
   <block id="9ef78003c570ffd4cf0f0340af7c6c32" category="list-text">对于多个集群、请选择集群、然后选择*结束选定支持*。</block>
   <block id="ccc56a6622f5dccc8b39bf717c5273e9" category="section-title">警报通知电子邮件</block>
-  <block id="c06a2fcebc732d180073389e143e156a" category="paragraph">Active IQ 警报的订阅者会针对系统上触发的每个警报接收不同的状态电子邮件。与警报关联的状态电子邮件有三种：</block>
   <block id="bcbb59ba38b8d8a53386ea9e5e619fa2" category="cell">新建警报电子邮件</block>
   <block id="df4912f6cebf8a31418b4aeb4d73f330" category="cell">触发警报时会发送此类电子邮件。</block>
   <block id="ce547e1ced608d92b9c86ba4168ed5b6" category="cell">提醒警报电子邮件</block>
@@ -730,7 +712,6 @@
   <block id="4d023f391eeb350e7e7cb48db31862cd" category="section-title">API收集</block>
   <block id="1e6c78e80b17c6b7b921a36a86593bc0" category="inline-link-macro">Element软件API文档</block>
   <block id="1b77c771de8f4f6c3baf80457d54f266" category="paragraph">在选定集群的*报告*下拉菜单的* API Collection*页面上、您可以查看NetApp SolidFire Active IQ 使用的API方法。有关这些方法的详细说明、请参见 <block ref="f22a227c10cf8287f1c4420ec53d0585" category="inline-link-macro-rx"></block>。</block>
-  <block id="18cc1cea8bdf18884d35610fd16fdb77" category="admonition">除了这些方法之外、Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的Active IQ API集合列表、则必须联系NetApp支持部门。</block>
   <block id="bf807ea6b20dd5093c3aabab556b7151" category="summary">对SolidFire Active IQ 问题进行故障排除。</block>
   <block id="174a62637bdb98e952c7c5e781c86dc4" category="doc">故障排除和支持</block>
   <block id="d290f31130e082bed7a5e74006445b90" category="paragraph">如果在使用SolidFire Active IQ 或其他基于NetApp Element 软件的产品时遇到问题或遇到技术问题、您可以使用许多资源来帮助解决问题。</block>
@@ -763,7 +744,6 @@
   <block id="b0f4034527d03957cc2cb1f551cd8137" category="cell">卷允许的最大 IOPS 数。</block>
   <block id="c4802961bcc44906090b75cc0c07e58d" category="cell">在短时间内允许的最大IOPS数。</block>
   <block id="f741657b8a9c703b4f9ce9ff0c849acd" category="cell">过去30分钟的平均延迟(µs)</block>
-  <block id="7aeb6780ec3c98b0f4eee23e1d0cac75" category="cell">在过去30分钟内、对将此节点作为主节点的所有卷完成读写操作的平均时间(以微秒为单位)。</block>
   <block id="8045d6e7a1be43321c6aacff3cd803a6" category="cell">为卷创建的快照数量。</block>
   <block id="83195ad3b0c05b1455b3fc233ba98d03" category="cell">选择垂直下拉菜单可查看有关单个卷的更多详细信息。</block>
   <block id="98d99278a2f04912ab18de8f6e866ed1" category="section-title">查看单个卷详细信息</block>
@@ -781,7 +761,6 @@
   <block id="edd5221a3f19c0c3519847deb797f926" category="cell">平均吞吐量</block>
   <block id="9d8e7acc5e639c5d381f284b3a9e6bce" category="cell">过去30分钟对卷执行的平均吞吐量。</block>
   <block id="4a3eb27a7f301e9be259f35e484b176e" category="cell">平均延迟</block>
-  <block id="0b580c0d1be4cfdf4da6f879cf00f88d" category="cell">过去30分钟内完成卷读写操作的平均时间(以微秒为单位)。</block>
   <block id="67e36c1bc8a90a031bad32c1819deab1" category="cell">您可以从*显示卷详细信息*下拉菜单查看其他详细信息。</block>
   <block id="9b2ec600406f1490117cd1550ae54c71" category="cell">分配给卷的读/写权限。</block>
   <block id="e3ec7263fd93737a7c3599382db8ec4a" category="cell">访问组</block>
@@ -821,8 +800,6 @@
   <block id="0c62d3c3703cc9cfe18da37951bf1957" category="list-text">(可选)您可以通过选择将每个图形导出为CSV文件 <block ref="2915399c84d3d8e8b7be56e94c232606" category="inline-image-macro-rx" type="image"></block> 图标。</block>
   <block id="1d106124801228432411a3ec12f75276" category="summary">了解如何在管理节点上启用SolidFire Active IQ 报告功能。</block>
   <block id="2608b149e5d7ac8d0fd12c6175bbe965" category="doc">启用SolidFire Active IQ 报告</block>
-  <block id="e78d077c08f454fe0bda46f85b4815fb" category="paragraph">如果您在安装或升级期间尚未启用SolidFire Active IQ 报告功能、则必须先在管理节点上启用此功能、然后Active IQ 服务器才能从管理节点接收集群的数据有效负载。成功设置连接后、集群会向Active IQ 服务器发送信息。然后、您可以在Active IQ UI中查看集群、其中会显示集群信息。</block>
-  <block id="b46ffcc9e6980359ceefabd56b5eff67" category="admonition">支持在Active IQ 中运行Google Chrome和Firefox浏览器。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">开始之前</block>
   <block id="56ee8203bf76c58f39596dab101d98d5" category="list-text">Active IQ 中的某些功能(例如服务质量(QoS))需要Element 11.3或更高版本才能正常工作。为了确认您能够使用所有Active IQ 功能、NetApp建议执行以下操作：</block>
   <block id="7ae82c07422143d84f2406fe018d3f73" category="list-text">您的存储集群运行的是 NetApp Element 软件 11.3 或更高版本。</block>
@@ -865,7 +842,6 @@
   <block id="2ab359ffeac1725ecfaeb8d017747085" category="doc">了解SolidFire Active IQ</block>
   <block id="2d24d754666d0b21fe6fc9c67d60634d" category="paragraph">开始使用SolidFire Active IQ 之前、您应了解SolidFire Active IQ 的工作原理及其收集的信息。</block>
   <block id="8dbbd87f01178639319815ba98d9d4bc" category="section-title">SolidFire Active IQ 的工作原理</block>
-  <block id="8296e5a5843626a7deba367ac0a6efed" category="paragraph">收集器和遥测等服务在管理节点上运行。这些服务配置了对集群的只读访问权限、并按计划对集群进行API调用、以收集关键性能、容量和运行状况指标。此信息将使用HTTPS上传到Active IQ 云数据库、并在该数据库中进行处理、并通过Active IQ UI提供给您和NetApp支持部门。您可以在Active IQ UI中使用SSO凭据登录并从*报告*下拉菜单中选择* API收集*来查看为集群接收的最新API有效负载和收集间隔。</block>
   <block id="b1026bd3d8abc4aec4981330dc62b906" category="inline-link-macro">访问SolidFire Active IQ (需要登录)</block>
   <block id="a6dc0a9f123b0664c5bb023e693bef51" category="paragraph"><block ref="a6dc0a9f123b0664c5bb023e693bef51" category="inline-link-macro-rx"></block></block>
   <block id="b066c8b2c0d4cbbe120fcbe58e323812" category="section-title">SolidFire Active IQ 收集的信息</block>
@@ -887,7 +863,6 @@
   <block id="9200ebe2b4ab5b00a77d52efaf85a6de" category="doc">开始使用SolidFire Active IQ</block>
   <block id="b25037cf63d119a232994ab4f2b4bf2c" category="paragraph">SolidFire Active IQ 工具可以轻松地从任意位置监控容量和性能、并了解集群运行状况。无论您如何使用SolidFire Active IQ 、在开始使用之前、都需要了解以下几点：</block>
   <block id="8cd7ccc6d38ee23b097ee26faf4c71c8" category="list-text"><block ref="ad1b90f44edaa6f6bcf1d6954c507065" category="inline-link-macro-rx"></block>：您应了解SolidFire Active IQ 的工作原理及其收集的信息。</block>
-  <block id="19bda018dd14a0253ab90b899617cc17" category="list-text"><block ref="4370f207367a64bc8e4d74d8bfee1cf2" category="inline-link-macro-rx"></block>：必须在管理节点上启用Active IQ 报告功能、Active IQ 服务器才能连接到集群并接收集群信息。</block>
   <block id="9105bd82ad51c438cd590bde945827a7" category="inline-link-macro">使用SolidFire Active IQ UI</block>
   <block id="b88f946c2a4f0d4f82a08759e3744ea1" category="list-text"><block ref="3d10ba7dfbb53d51fde6e6e02a6608a9" category="inline-link-macro-rx"></block>：了解新增或增强的功能、例如筛选、排序、导出数据和集群选择。</block>
   <block id="dff97aa9c118deaf53b64587432eaa6a" category="summary">了解SolidFire Active IQ 中的复制页面。</block>
@@ -1024,4 +999,29 @@
   <block id="4408a36df9e9ed5aa8dd852943967324" category="list-text"><block ref="370537d09346032450865c36be0b772b" category="inline-xref-macro-rx"></block></block>
   <block id="b01d0fd0e15cd69ca0c99c35e0db5116" category="paragraph">在选定集群的侧面板上的*节点*页面中、您可以查看集群中节点的信息。</block>
   <block id="9b549dfa7e57d3b25fa9e46fe3685b2b" category="paragraph">在选定集群的侧面板上提供的"* QoS Management*&gt;* Node Throttling*"页面中、您可以查看集群中节点的限制百分比。节点会在显示左侧以缩略图布局的形式列出、并根据选定时间范围的限制程度进行排序。</block>
+  <block id="7ff6daa1a681385f423e95a7f18161fa" category="list-text"><block ref="7ff6daa1a681385f423e95a7f18161fa" category="inline-link-macro-rx"></block></block>
+  <block id="6b83be76b9c570a2cddff82aed1845cd" category="list-text"><block ref="6b83be76b9c570a2cddff82aed1845cd" category="inline-link-macro-rx"></block></block>
+  <block id="b31933dd9383963840626a69d4b34c47" category="list-text"><block ref="4370f207367a64bc8e4d74d8bfee1cf2" category="inline-link-macro-rx"></block>：必须在管理节点上启用SolidFire Active IQ 报告功能、Active IQ 服务器才能连接到集群并接收集群信息。</block>
+  <block id="9927f2404de0472632f204c4fa98e1c6" category="paragraph">收集器和遥测等服务在管理节点上运行。这些服务配置了对集群的只读访问权限、并按计划对集群进行API调用、以收集关键性能、容量和运行状况指标。此信息将使用HTTPS上传到SolidFire Active IQ 云数据库、并在该数据库中进行处理、并通过SolidFire Active IQ UI提供给您和NetApp支持部门。您可以在SolidFire Active IQ UI中使用SSO凭据登录并从*报告*下拉菜单中选择* API收集*来查看为集群接收的最新API有效负载和收集间隔。</block>
+  <block id="96e3c5a892e3537b54d00dc35ccf9f36" category="paragraph">如果您在安装或升级期间尚未启用SolidFire Active IQ 报告功能、则必须先在管理节点上启用此功能、然后SolidFire Active IQ 服务器才能从管理节点接收集群的数据有效负载。成功设置连接后、集群会向SolidFire Active IQ 服务器发送信息。然后、您可以在SolidFire Active IQ UI中查看集群、其中会显示集群信息。</block>
+  <block id="510895b97c10d0e3aa35ddf13764e621" category="admonition">支持在SolidFire Active IQ 中运行Google Chrome和Firefox浏览器。</block>
+  <block id="4a943f8cd4281990b05677e29cb8ac56" category="cell">对将此节点作为主节点的所有卷执行的平均IOPS数。IOPS会在集群端以500毫秒的间隔收集。SolidFire Active IQ 会按60秒的间隔收集这些值。对于每个卷、平均IOPS是根据过去30分钟收集的SolidFire Active IQ 值计算得出的。</block>
+  <block id="c12000028afc91ba3df9d7d246fce948" category="cell">对将此节点作为主节点的所有卷执行的平均吞吐量。在集群端以500毫秒的间隔收集吞吐量。SolidFire Active IQ 会按60秒的间隔收集这些值。对于每个卷、平均吞吐量是根据过去30分钟收集的SolidFire Active IQ 值计算得出的。</block>
+  <block id="4eadebc24c89d02ea356d0e01e739bdf" category="cell">对将此节点作为主节点的所有卷完成读写操作的平均时间(以微秒为单位)。延迟在集群端以500毫秒为间隔测量。SolidFire Active IQ 会按60秒的间隔收集这些值。对于每个卷、平均延迟是根据过去30分钟收集的SolidFire Active IQ 值计算得出的。有关详细信息，请参见此<block ref="996f08614653af80b4f318332cbb79cc" category="inline-link-rx"></block>。</block>
+  <block id="2fff8a29ac28db690456bd3a5624d15d" category="cell">过去30分钟内完成卷读写操作的平均时间(以微秒为单位)。有关详细信息，请参见此<block ref="996f08614653af80b4f318332cbb79cc" category="inline-link-rx"></block>。</block>
+  <block id="eaa54d3494e5debfd810d9a11bb0c208" category="paragraph">SolidFire Active IQ 会根据近期活动的卷统计信息数据提出性能建议。建议侧重于卷的QoS最大和最小保证IOPS、只有在可能需要改进集群时、才会在UI中显示这些建议。</block>
+  <block id="f680ee7ec525111dba2df560203d7f7e" category="paragraph">SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。</block>
+  <block id="4d82c829067dd90d1d495f167668baa1" category="cell">在SolidFire Active IQ 中触发警报的时间、而不是在集群本身上。</block>
+  <block id="ea696fd82bced602de4f7d7cab2ceadf" category="paragraph">除了所有SolidFire Active IQ 页面上提供的传统筛选选项之外、*虚拟机*页面还提供了快速筛选按钮、您可以选择这些按钮来确定常见的VM可用性状态。</block>
+  <block id="c676c8802ba92ea3f0735d38f6ecb857" category="paragraph">您可以在SolidFire Active IQ 中对页面上的列表信息进行排序和筛选。在查看列表(例如节点、驱动器、卷等)时、您可以使用筛选器功能集中显示信息并使其更易于显示在屏幕上。</block>
+  <block id="dfc44552ee42df05632a5555bd3c5d10" category="paragraph">您可以在SolidFire Active IQ UI中的某些页面上按一个或多个列对列表信息进行排序。这有助于您在屏幕上排列所需的信息。</block>
+  <block id="7f8c0d79a70f15c2c91c34f1a62ac499" category="paragraph">在SolidFire Active IQ 中、您可以查看有关环境中单个集群的信息。</block>
+  <block id="c7644ea56581948d4b3d3e118f969dd3" category="list-text">从SolidFire Active IQ 信息板中、选择*选择集群*。</block>
+  <block id="2fb83e16aa1b173cb1dd65766e0d7e3b" category="paragraph">查看SolidFire Active IQ UI时、您可能会看到以下图标。</block>
+  <block id="d6670ea8650dcb3671cb6d4eeba43553" category="paragraph">您可以使用可通过整个SolidFire Active IQ 访问的电子邮件反馈选项来帮助改进UI并解决任何UI问题。</block>
+  <block id="bc61065501380ecc6cd9d1f861a48461" category="paragraph">您可以通过SolidFire Active IQ 中的*所有集群视图*创建警报策略来监控信息。通过警报策略、您可以收到有关安装中一个或多个集群的状态或性能事件的通知、以便可以在发生更严重的事件之前或对此事件做出响应。</block>
+  <block id="474d7c9eb19859668726a36e86e68540" category="cell">如果管理节点上运行的SolidFire Active IQ 收集器在指定的持续时间内无法向SolidFire Active IQ 发送数据、则发送通知。</block>
+  <block id="1283e547f2c97bde5254234dd71e8920" category="cell">在触发VMware警报并向SolidFire Active IQ 报告时发送通知。</block>
+  <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">SolidFire Active IQ 警报的订阅者会针对系统上触发的每个警报接收不同的状态电子邮件。与警报关联的状态电子邮件有三种：</block>
+  <block id="472062bb6f5f96a2db31c5e5b3da2b6e" category="admonition">除了这些方法之外、SolidFire Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的SolidFire Active IQ API集合列表、则必须联系NetApp支持部门。</block>
 </blocks>

@@ -15,8 +15,8 @@ summary: 了解SolidFire Active IQ 中的复制页面。
 
 了解有关集群对和卷对页面的更多信息：
 
-* <<cluster_pairs,集群对>>
-* <<volume_pairs,卷对>>
+* ,集群对
+* ,卷对
 
 
 

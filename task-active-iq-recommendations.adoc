@@ -13,7 +13,7 @@ summary: 了解SolidFire Active IQ 中的QoS建议页面。
 [role="lead"]
 可从选定集群的侧面板访问的"* QoS Management*>* recommendations*"页面根据最新性能数据为集群提供每日服务质量(QoS)建议。只有Element软件11.x或更高版本上的集群才支持QoS建议。
 
-Active IQ 会根据近期活动的卷统计信息数据提出性能建议。建议侧重于卷的QoS最大和最小保证IOPS、只有在可能需要改进集群时、才会在UI中显示这些建议。
+SolidFire Active IQ 会根据近期活动的卷统计信息数据提出性能建议。建议侧重于卷的QoS最大和最小保证IOPS、只有在可能需要改进集群时、才会在UI中显示这些建议。
 
 
 

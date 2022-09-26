@@ -15,15 +15,15 @@ summary: 了解SolidFire Active IQ 中的节点限制页面。
 
 了解如何查看节点限制信息：
 
-* <<View graphs and select date ranges>>
-* <<Export node throttling data>>
+*  graphs and select date ranges
+*  node throttling data
 
 
 
 
 == 查看图形并选择日期范围
 
-Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。
+SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时、该页面上的所有图形都会调整为选定范围。每个图显示的默认日期范围为7天。
 
 您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。
 

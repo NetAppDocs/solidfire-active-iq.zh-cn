@@ -15,11 +15,11 @@ summary: 了解SolidFire Active IQ 中的虚拟卷页面。
 
 了解VVOL相关任务：
 
-* <<Virtual Volumes>>
-* <<Storage Containers>>
-* <<Protocol Endpoints>>
-* <<Hosts>>
-* <<Bindings>>
+*  Volumes
+*  Containers
+*  Endpoints
+* 
+* 
 
 
 

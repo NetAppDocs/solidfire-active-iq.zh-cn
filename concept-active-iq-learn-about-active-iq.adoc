@@ -17,7 +17,7 @@ summary: 了解SolidFire Active IQ。
 
 == SolidFire Active IQ 的工作原理
 
-收集器和遥测等服务在管理节点上运行。这些服务配置了对集群的只读访问权限、并按计划对集群进行API调用、以收集关键性能、容量和运行状况指标。此信息将使用HTTPS上传到Active IQ 云数据库、并在该数据库中进行处理、并通过Active IQ UI提供给您和NetApp支持部门。您可以在Active IQ UI中使用SSO凭据登录并从*报告*下拉菜单中选择* API收集*来查看为集群接收的最新API有效负载和收集间隔。
+收集器和遥测等服务在管理节点上运行。这些服务配置了对集群的只读访问权限、并按计划对集群进行API调用、以收集关键性能、容量和运行状况指标。此信息将使用HTTPS上传到SolidFire Active IQ 云数据库、并在该数据库中进行处理、并通过SolidFire Active IQ UI提供给您和NetApp支持部门。您可以在SolidFire Active IQ UI中使用SSO凭据登录并从*报告*下拉菜单中选择* API收集*来查看为集群接收的最新API有效负载和收集间隔。
 
 link:https://activeiq.solidfire.com/["访问SolidFire Active IQ (需要登录)"^]
 

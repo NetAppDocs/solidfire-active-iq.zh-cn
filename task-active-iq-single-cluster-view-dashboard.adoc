@@ -17,8 +17,8 @@ summary: 了解SolidFire Active IQ 中选定集群的信息板页面。
 
 可用详细信息因系统而异：
 
-* <<Storage-only system>>
-* <<NetApp HCI system overview>>
+*  system
+*  HCI system overview
 
 
 

@@ -143,6 +143,17 @@
               $("#mysidebar").navgoco('toggle', true);
           });
 
+          $(".sidebar-nav-container").on("scroll", function() {
+            $.cookie("sidebarScroll", $(".sidebar-nav-container").scrollTop(), {
+              path    : "/zh-cn/solidfire-active-iq"  
+            });
+          });
+          $(function() {
+            if ($.cookie("sidebarScroll")) {
+              $(".sidebar-nav-container").scrollTop($.cookie("sidebarScroll"));
+            }
+          });
+
       });
 
   </script>
@@ -256,6 +267,8 @@
         </a>
       </div>
 
+      
+      
       
       <div class="search-property-bar">
         <div id="search-demo-container" class="searchbox n-property-bar__search">
@@ -604,7 +617,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 开始使用SolidFire Active IQ</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概述"
@@ -641,7 +654,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 管理SolidFire Active IQ</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概述"
@@ -657,7 +670,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 所有集群视图</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概述"
@@ -701,7 +714,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> 选择一个集群</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概述"
@@ -745,7 +758,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> Volumes</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概述"
@@ -789,7 +802,7 @@
     ><a href="#">
         <div class="na-navbar-padding"> QoS管理</div>
       </a>
-      <ul>
+      <ul style="display: none;">
         <li 
       data-pdf-exists="true" 
       data-pdf-filename="概述"
@@ -843,6 +856,7 @@
 </script>
 <!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
 <script>$("li.active").parents('li').toggleClass("active");</script>
+<script>$("#mysidebar li.active").parents('ul').css("display","block");</script>
 
 
   </div>
@@ -894,7 +908,7 @@
 <p class="page-details">
   
     
-    <time datetime="2022-09-26 14:38:15 +0000">09/26/2022</time>
+    <time datetime="2022-11-02 20:03:18 +0000">11/02/2022</time>
     
   
 
@@ -934,20 +948,18 @@
 <p>您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。</p>
 </div>
 <div class="paragraph">
-<p>此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：</p>
+<p>这些图形将根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：绿色(无)、黄色(有限制)或红色(高)。有关详细信息、请参见下图示例：</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>绿色=高达39%</p>
-</li>
-<li>
-<p>黄色= 40到59%</p>
-</li>
-<li>
-<p>红色=高于59%</p>
-</li>
-</ul>
+<div class="exampleblock">
+<div class="title">示例 1. 展开图示例</div>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="./media/node_throttling_range.PNG" alt="节点限制图"></span></p>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p>将鼠标指针置于图中的任意位置以查看时间点详细信息。</p>
 </div>
 <div class="paragraph">
 <p><a href="task-active-iq-qos-recommendations.html">"了解集群的QoS建议"</a>。</p>
@@ -963,17 +975,6 @@
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>将鼠标指针置于图中的任意位置以查看时间点详细信息。</p>
-</div>
-<div class="exampleblock">
-<div class="title">示例 1. 展开图示例</div>
-<div class="content">
-<div class="paragraph">
-<p><span class="image"><img src="./media/node_throttling_range.PNG" alt="节点限制图"></span></p>
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1038,11 +1039,7 @@
         <div class="n-footer__copyright">
           <ul class="n-footer__copyright-list">
             <li class="n-footer__copyright-link">
-              <span class="n-footer__fine-print">想就我们的网站提供反馈?</span>
-              <a target="_self" href="javascript:netapp_mailto()">请告诉我们</a>
-            </li>
-            <li class="n-footer__copyright-link">
-              <a href="https://docs.netapp.com/zh-cn/announcements/">通知</a>
+              <a target="_self" href="javascript:netapp_mailto()">发送有关此页面的反馈</a>
             </li>
           </ul>
         </div>

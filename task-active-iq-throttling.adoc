@@ -27,25 +27,20 @@ SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期
 
 您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。
 
-此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：
-
-* 绿色=高达39%
-* 黄色= 40到59%
-* 红色=高于59%
-
-
-link:task-active-iq-qos-recommendations.html["了解集群的QoS建议"]。
-
-
-NOTE: 在Node Throttling页面中、您可以确定存储集群中是否存在QoS推回、请参见此内容 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_check_for_QoS_pushback_in_Element_Software["知识库文章"^] 以了解相关信息。
-
-将鼠标指针置于图中的任意位置以查看时间点详细信息。
+这些图形将根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：绿色(无)、黄色(有限制)或红色(高)。有关详细信息、请参见下图示例：
 
 .展开图示例
 ====
 image:node_throttling_range.PNG["节点限制图"]
 
 ====
+将鼠标指针置于图中的任意位置以查看时间点详细信息。
+
+link:task-active-iq-qos-recommendations.html["了解集群的QoS建议"]。
+
+
+NOTE: 在Node Throttling页面中、您可以确定存储集群中是否存在QoS推回、请参见此内容 https://kb.netapp.com/Advice_and_Troubleshooting/Data_Storage_Software/Element_Software/How_to_check_for_QoS_pushback_in_Element_Software["知识库文章"^] 以了解相关信息。
+
 
 
 == 导出节点限制数据

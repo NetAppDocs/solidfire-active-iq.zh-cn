@@ -80,9 +80,6 @@
   <block id="48a5c77d4bcca65797ec6cae22e9596d" category="list-text"><block ref="3aad2e6e5736129db0c2a3093b04110c" category="inline-xref-macro-rx"></block></block>
   <block id="f3bf056f68b8355023f77881422e7f1f" category="section-title">查看图形并选择日期范围</block>
   <block id="3cb48fc4c57bd3575e0c430007bfe074" category="paragraph">您可以从日历下拉框或一组预定义范围中选择日期范围。日期范围是使用当前浏览器时间(在选择时)和配置的时间量计算得出的。此外、您还可以通过直接刷新底部的条形图来选择所需的间隔。您可以通过选择左侧的缩略图布局在图形之间切换。</block>
-  <block id="71f0bed4fc7583649837eed2b8ee49c4" category="list-text">绿色=高达39%</block>
-  <block id="a4965bbdc77616cfb8e9619447a55ffc" category="list-text">黄色= 40到59%</block>
-  <block id="77b4dabdac23af0111f4e3fffcb2f6e5" category="list-text">红色=高于59%</block>
   <block id="f8feac3680b404eb25b3b1fea6aa6e70" category="inline-link-macro">了解集群的QoS建议</block>
   <block id="ea716f1a51591b923cd83aaa8faa830c" category="paragraph"><block ref="4334742ebeca91bbb52799a64e982fde" category="inline-link-macro-rx"></block>。</block>
   <block id="dd76252ea7a50def2a98f218cb1505b4" category="inline-link">知识库文章</block>
@@ -983,7 +980,6 @@
   <block id="08edd2123939d5309dced149763a50ee" category="sidebar">NetApp HCI</block>
   <block id="d60c463bb4096f3ed4bd1618626dfe10" category="sidebar">故障排除</block>
   <block id="0607bd332350ef193bc31ef1c742c508" category="sidebar">请联系技术支持</block>
-  <block id="1b4febc902d7bf51135668545d151a14" category="paragraph">此图根据选定节点上托管的卷的最小和最大IOPS设置显示节点的限制百分比：</block>
   <block id="b28e179f94097b207a2dc9172aa4b4d0" category="list-text">您可以访问 Internet 。不能从没有外部连接的非公开站点使用 Active IQ 收集器服务。</block>
   <block id="c357af7a99b77ac25c548aef6df0d1a8" category="list-text"><block ref="c357af7a99b77ac25c548aef6df0d1a8" category="inline-link-macro-rx"></block></block>
   <block id="16beb139f89865caa5bdd51a5b9fadcd" category="summary">了解SolidFire Active IQ 中的QoS管理页面。</block>
@@ -1024,4 +1020,5 @@
   <block id="1283e547f2c97bde5254234dd71e8920" category="cell">在触发VMware警报并向SolidFire Active IQ 报告时发送通知。</block>
   <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">SolidFire Active IQ 警报的订阅者会针对系统上触发的每个警报接收不同的状态电子邮件。与警报关联的状态电子邮件有三种：</block>
   <block id="472062bb6f5f96a2db31c5e5b3da2b6e" category="admonition">除了这些方法之外、SolidFire Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的SolidFire Active IQ API集合列表、则必须联系NetApp支持部门。</block>
+  <block id="f107820fc2ea40af48df224b45278cae" category="paragraph">这些图形将根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：绿色(无)、黄色(有限制)或红色(高)。有关详细信息、请参见下图示例：</block>
 </blocks>

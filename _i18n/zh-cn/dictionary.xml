@@ -256,7 +256,6 @@
   <block id="5f9d43bb88c35632903d5eb16decc380" category="cell">更多信息。选择可查看其他选项。</block>
   <block id="e44b6e341cd265f3c2894bc90107e6cb" category="inline-image-macro">更多详细信息图标</block>
   <block id="45ebbd5bdb9477285076cbc10c602f1d" category="paragraph"><block ref="45ebbd5bdb9477285076cbc10c602f1d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="ea2e81a1b728b000d0a80f1b7adb8d39" category="cell">选择以了解更多详细信息。</block>
   <block id="1ae8a55f317d3b2570e79a0b4a668040" category="section-title">提供反馈</block>
   <block id="0c6ab2fbcdd7cedaa7510d6167c60089" category="list-text">从用户界面的任何页面中、选择 <block ref="0394d5cd9adafeb64d44c535a81d6cea" category="inline-image-macro-rx" type="image"></block> 图标、然后选择*反馈*。</block>
   <block id="e392fa2dbe4893eaf358507add7c6068" category="list-text">在电子邮件的邮件正文中输入相关信息。</block>
@@ -1021,4 +1020,50 @@
   <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">SolidFire Active IQ 警报的订阅者会针对系统上触发的每个警报接收不同的状态电子邮件。与警报关联的状态电子邮件有三种：</block>
   <block id="472062bb6f5f96a2db31c5e5b3da2b6e" category="admonition">除了这些方法之外、SolidFire Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的SolidFire Active IQ API集合列表、则必须联系NetApp支持部门。</block>
   <block id="f107820fc2ea40af48df224b45278cae" category="paragraph">这些图形将根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：绿色(无)、黄色(有限制)或红色(高)。有关详细信息、请参见下图示例：</block>
+  <block id="1f8599a5bc6899eb5bf58ed4e4161fee" category="summary">了解SolidFire Active IQ 中的所有节点视图页面。</block>
+  <block id="0975b9d0e95957f2f96d932db082c1ac" category="doc">所有节点视图</block>
+  <block id="433600042717615fb07744743de63c31" category="paragraph">从*所有节点视图*下拉列表中选择公司名称时、您可以查看有关公司所有节点的信息、包括受限节点。选择公司名称后、它将替换顶部导航栏中的*所有节点视图*。</block>
+  <block id="e5a76b51fb2c64713124ea9105762e59" category="admonition">如果您的SolidFire Active IQ 帐户只有一个关联公司名称、则侧面板中的*所有节点*和*受限节点*页面将默认为该公司名称。</block>
+  <block id="d38dc317c03da92e20a4b04b5bc3d0bb" category="paragraph">了解有关所有节点和受限节点页面的更多信息：</block>
+  <block id="cef6e5e02f93e64082971483abce5410" category="list-text"><block ref="4a6921278f1195bd29f94675e88563bf" category="inline-xref-macro-rx"></block></block>
+  <block id="a612d4889a4b987a98be508fa9b72514" category="list-text"><block ref="fc138af61db82eb110cc73e50bacbc58" category="inline-xref-macro-rx"></block></block>
+  <block id="c10bb4a02280372986102fdf75316770" category="section-title">查看有关所有节点的信息</block>
+  <block id="b1f4982719491c265d820d829838d744" category="paragraph">在侧面板提供的*所有节点*页面上、您可以查看有关选定公司的所有节点的信息。</block>
+  <block id="adbcdb5d92797a4f02ac6baa443d9eea" category="list-text">集群主节点：执行集群范围管理任务并包含管理虚拟IP地址和存储虚拟IP地址的节点。</block>
+  <block id="b13826bda37dd4294975eddb82110cdc" category="section-title">查看有关受限节点的信息</block>
+  <block id="9cc0e77dc371f1221f703c1017def718" category="paragraph">在侧面板提供的*受限节点*页面上、您可以查看选定公司在过去30天内限制大于1%的所有节点的信息。</block>
+  <block id="67daf92c833c41c95db874e18fcb2786" category="inline-image-macro">description</block>
+  <block id="f1e1bd41e60ac6f95abc16508950c3b8" category="paragraph">您可以选择查看限制时间为*高*、*受限*或*组合*(高且受限)的节点。您还可以通过选择来查看节点限制表以及高限制、有限限制和组合限制选项的说明 <block ref="cc03efa5053a59aadd57723f4094ebf4" category="inline-image-macro-rx" type="image"></block> 图标、如以下示例所示：</block>
+  <block id="7437c96090b9e7622a8cc8b0ea7e9463" category="inline-image-macro">限制节点页面和限制时间说明</block>
+  <block id="937684e3d3653f5c975333de09fb9330" category="paragraph"><block ref="937684e3d3653f5c975333de09fb9330" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="06bd3adb75f54eaaef79051e0bedce7e" category="paragraph">详细了解可用于受限节点的信息。</block>
+  <block id="177bd0b3a4f8a7108b090f6a65391a6a" category="paragraph">*高限制时间视图*</block>
+  <block id="6f2138dc82fdb66cf2acb0c7a0e6640c" category="cell">过去24小时的高限制</block>
+  <block id="c4081b9c016ea439674e01e58feaf507" category="cell">过去24小时中高节点限制的百分比。</block>
+  <block id="c8bb2951a4d22e6ba7b173f104171af0" category="cell">过去7天的高限制</block>
+  <block id="5f91560b20aab2c566a016eff6fdc9fb" category="cell">过去7天中高节点限制的百分比。</block>
+  <block id="6160ff0b59753dc9675cca3d81dce928" category="cell">过去14天的高限制</block>
+  <block id="eabe719c92fe0e07378cca0e6da0294c" category="cell">过去14天中高节点限制的百分比。</block>
+  <block id="978d3c96489cfee1c52e7a438120c1e1" category="cell">过去30天的高限制</block>
+  <block id="c3cf47e48bfcfb747df7b41081aa5431" category="cell">过去30天中高节点限制的百分比。</block>
+  <block id="445c634faae3fd954f036248de3446b2" category="paragraph">*限制时间视图*</block>
+  <block id="c5fbcd58619b808515d831e93bd3dc8e" category="cell">限制限制限制限制限制过去24小时</block>
+  <block id="bb22c7f1ca024aa2fc061f651863b053" category="cell">过去24小时有限节点限制的百分比。</block>
+  <block id="f80a309868884e96851af006bfd17096" category="cell">过去7天的有限限制</block>
+  <block id="fcd7d476a1e02aa2b4be38a9a213c347" category="cell">过去7天有限节点限制的百分比。</block>
+  <block id="0e2a479c84ac5e3a2b1baf5457e34d42" category="cell">限制限制限制限制过去14天</block>
+  <block id="2701012f9f67519d3afe54c041032a9a" category="cell">过去14天有限节点限制的百分比。</block>
+  <block id="55c2b0ebc9cd6868c5776d24447d1c7b" category="cell">限制限制限制限制过去30天</block>
+  <block id="0eda97161d145e2be25d9af5da88d209" category="cell">过去30天有限节点限制的百分比。</block>
+  <block id="cc7144e5422d5b9b480bfd8a86661966" category="paragraph">*组合限制时间视图*</block>
+  <block id="5d234f16125b296396c9d5a106f7f65e" category="cell">综合限制过去24小时</block>
+  <block id="357d46b83e525d1425914a6b9034833e" category="cell">过去24小时合并节点限制的百分比。</block>
+  <block id="92fb43b31cc7256efc88d23a3660a5f8" category="cell">过去7天的综合限制</block>
+  <block id="027887594afcf01399d731fb558b7f4d" category="cell">过去7天合并节点限制的百分比。</block>
+  <block id="eb0e388651cfe1fecf1ba996c05f482c" category="cell">综合限制过去14天</block>
+  <block id="2b93182c4ea5557ec259c61e340719aa" category="cell">过去14天合并节点限制的百分比。</block>
+  <block id="83569553655040d1b128eb95f65db596" category="cell">综合限制过去30天</block>
+  <block id="f15e45347229ad94158fcbd6d2423fb7" category="cell">过去30天合并节点限制的百分比。</block>
+  <block id="13b17ea50aa3270a0eb1ac21882cd1b6" category="cell">选择以了解更多详细信息。<block ref="b88c7530ca9d8b23f1e4691f94e3f70b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="db2e76d805debcb4c30511df6e0aecf1" category="list-text"><block ref="db2e76d805debcb4c30511df6e0aecf1" category="inline-link-macro-rx"></block></block>
 </blocks>

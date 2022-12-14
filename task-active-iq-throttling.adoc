@@ -15,8 +15,8 @@ summary: 了解SolidFire Active IQ 中的节点限制页面。
 
 了解如何查看节点限制信息：
 
-*  graphs and select date ranges
-*  node throttling data
+* <<查看图形并选择日期范围>>
+* <<导出节点限制数据>>
 
 
 
@@ -30,6 +30,7 @@ SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期
 这些图形将根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：绿色(无)、黄色(有限制)或红色(高)。有关详细信息、请参见下图示例：
 
 .展开图示例
+[%collapsible]
 ====
 image:node_throttling_range.PNG["节点限制图"]
 

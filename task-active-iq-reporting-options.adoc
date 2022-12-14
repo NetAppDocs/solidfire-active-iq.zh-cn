@@ -13,15 +13,15 @@ summary: 了解SolidFire Active IQ 中选定集群的报告选项。
 [role="lead"]
 了解侧面板中的*报告*下拉菜单：
 
-* 
-* 
-* 
-*  log
-* 
-* 
-*  Sessions
-*  Networks
-*  Collection
+* <<Capacity>>
+* <<效率>>
+* <<性能>>
+* <<错误日志>>
+* <<事件>>
+* <<警报>>
+* <<iSCSI会话>>
+* <<虚拟网络>>
+* <<API收集>>
 
 
 
@@ -251,6 +251,7 @@ NOTE: 所有综合效率均通过简单地乘以报告的系数值来计算。
 在选定集群的*报告*下拉菜单的* iSCSI会话*页面上、您可以查看有关集群上活动会话数以及集群上已发生iSCSI会话数的详细信息。
 
 .展开iSCSI会话示例
+[%collapsible]
 ====
 image:iscsi_sessions.PNG["iSCSI会话"]
 

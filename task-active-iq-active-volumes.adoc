@@ -13,9 +13,9 @@ summary: 了解如何在SolidFire Active IQ 中查看卷详细信息。
 [role="lead"]
 在*卷*页面中、您可以查看有关活动卷、单个卷和性能图形的详细信息：
 
-*  active volume details
-*  individual volume details
-*  individual volume performance graphs
+* <<查看活动卷详细信息>>
+* <<查看单个卷详细信息>>
+* <<查看单个卷性能图>>
 
 
 

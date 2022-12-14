@@ -13,13 +13,13 @@ summary: 了解SolidFire Active IQ 中的UI特性和功能。
 [role="lead"]
 了解中的UI特性和功能 link:https://activeiq.solidfire.com/["SolidFire Active IQ (需要登录)"^]：
 
-*  filters
-*  lists
-*  graphs and select date ranges
-*  list views and report data
-*  a cluster
-*  reference
-*  feedback
+* <<使用筛选器>>
+* <<对列表进行排序>>
+* <<查看图形并选择日期范围>>
+* <<导出列表视图和报告数据>>
+* <<选择一个集群>>
+* <<图标参考>>
+* <<提供反馈>>
 
 
 
@@ -79,6 +79,7 @@ SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期
 将鼠标指针置于图形线上方可查看时间点详细信息。
 
 .展开图示例
+[%collapsible]
 ====
 image:graphs_and_date_ranges.PNG["图形和日期范围"]
 

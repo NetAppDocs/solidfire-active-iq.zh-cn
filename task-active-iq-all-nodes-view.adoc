@@ -18,8 +18,8 @@ NOTE: 如果您的SolidFire Active IQ 帐户只有一个关联公司名称、则
 
 了解有关所有节点和受限节点页面的更多信息：
 
-*  information about all nodes
-*  information about throttled nodes
+* <<查看有关所有节点的信息>>
+* <<查看有关受限节点的信息>>
 
 
 

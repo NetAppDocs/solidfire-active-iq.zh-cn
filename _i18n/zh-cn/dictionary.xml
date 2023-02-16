@@ -548,7 +548,6 @@
   <block id="e5574d4f50cf65adfb39e54e1a5f5ab1" category="paragraph">此策略将从系统中永久删除。</block>
   <block id="685a82571a4b315892d300d3410d13b9" category="section-title">查看禁止的集群</block>
   <block id="a5358ca3015b1305c6ef8a4f2ae99f44" category="paragraph">在*所有集群视图*的*警报*下拉菜单中的*受支持集群*页面上、您可以查看已禁止警报通知的集群列表。</block>
-  <block id="d8d9aa68c453cb9b41b4de4fced325c7" category="paragraph">NetApp支持部门或客户可以在执行维护时禁止发送集群警报通知。如果禁止对使用升级禁止的集群发送通知、则不会发送升级期间发生的常见警报。此外、还提供了一个完整的警报禁止选项、可在指定的持续时间内停止集群的警报通知。您可以在*警报*菜单的*历史记录*页面上查看禁止显示通知时未发送的任何电子邮件警报。禁止的通知会在定义的持续时间过后自动恢复。</block>
   <block id="4a6a16c3e094da903bd21906ee24fcd6" category="paragraph">以下信息可从*受支持集群*页面获得。</block>
   <block id="10133a314a85c1c1a92fa3e662cdda44" category="cell">分配给集群的公司名称。</block>
   <block id="c13733ab0cde1d7164208b013c7e85db" category="cell">集群ID</block>
@@ -556,12 +555,10 @@
   <block id="d6ed36bb2b00046e0edf3d24b526b7ad" category="cell">集群名称</block>
   <block id="e3d5f2a7512ede9e52a01c31493bfb81" category="cell">分配给集群的名称。</block>
   <block id="2bbc845892f400626baab5af687527c5" category="cell">开始时间</block>
-  <block id="4820b9ef9bd7442acc6ccdf08f9614d3" category="cell">禁止通知的确切开始时间。</block>
   <block id="c91a577b72313356fad611c55f43c10f" category="cell">结束时间</block>
   <block id="64be5fe1b490e9a5f15e68f4baa65485" category="cell">计划结束禁止通知的确切时间</block>
   <block id="2928a5c9dcc57c93a61ff231dce7d08e" category="cell">选择此选项可禁止或恢复集群通知。</block>
   <block id="91b4bb4cfabe9824c1024d2207177139" category="section-title">禁止集群通知</block>
-  <block id="9858acb2dd14a30e26cf805c6de0730a" category="paragraph">您可以禁止在集群级别为单个或多个集群发送警报通知。</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">执行以下操作之一：</block>
   <block id="16b8d0f1d7e1b42eb46dcd70d096ecf4" category="list-text">从*信息板*概述中、选择要禁止的集群的操作菜单。</block>
   <block id="36dbb4ac73c2a1146dafa537aa33167b" category="list-text">从*警报*&gt;*集群禁止*中、选择*禁止集群*。</block>
@@ -569,7 +566,6 @@
   <block id="3faf81240a474d1bab3caae427a0b972" category="list-text">如果从*受支持集群*页面中选择了*禁止集群*按钮、请选择一个集群。</block>
   <block id="d9eec58efcbfdf3d4c1babd111ed996c" category="inline-xref">了解禁止类型</block>
   <block id="cb886f47c22a31667b6be5251d178c52" category="list-text">选择一种警报禁止类型：*完整*、*升级*、*计算*、*节点硬件*、*驱动器*、 *网络*或*电源*。 <block ref="a879a530d2e9cfbfff346e782418a668" category="inline-xref-macro-rx"></block>。</block>
-  <block id="dbb77a21634d63a653c797feb9464c44" category="admonition">一个集群可以具有多种禁止类型、但不能共享一种禁止类型。例如、一个集群可以具有*全*、*计算*和*驱动器*禁止、但不能具有两个*全*支持。如果集群上已存在禁止、则此禁止将灰显。要替换现有禁止、请选择*覆盖现有*并选择新的禁止类型。</block>
   <block id="d2f9ee75eef16569d25256f62c3285af" category="list-text">选择一个通用持续时间或输入自定义结束日期和时间、在此期间应禁止显示通知。</block>
   <block id="399e38cad3fefa8ffc7773b5e82ba0a4" category="list-text">选择*禁止*。</block>
   <block id="55c71a545e88a736b0fd984ef1cf9011" category="admonition">此操作还会禁止向NetApp支持发送某些或所有通知。在集群禁止生效后、NetApp支持部门或有权查看集群的任何用户均可更新此禁止状态。</block>
@@ -1066,4 +1062,12 @@
   <block id="f15e45347229ad94158fcbd6d2423fb7" category="cell">过去30天合并节点限制的百分比。</block>
   <block id="13b17ea50aa3270a0eb1ac21882cd1b6" category="cell">选择以了解更多详细信息。<block ref="b88c7530ca9d8b23f1e4691f94e3f70b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="db2e76d805debcb4c30511df6e0aecf1" category="list-text"><block ref="db2e76d805debcb4c30511df6e0aecf1" category="inline-link-macro-rx"></block></block>
+  <block id="0e3b63363a35e9f7a5dee72963106a92" category="paragraph">NetApp支持部门或客户可以在执行维护时禁止发送集群警报通知。如果禁止对使用升级禁止的集群发送通知、则不会发送升级期间发生的常见警报。此外、还提供了一个完整的警报禁止选项、可在指定的持续时间内停止集群的警报通知。您可以在*警报*菜单的*历史记录*页面上查看禁止显示通知时未发送的任何电子邮件警报。禁止的通知会在定义的持续时间过后自动恢复。您可以通过在下拉菜单中选择"恢复通知"尽早结束禁止通知的操作。</block>
+  <block id="1b1b4ed1e5c3651d0098e519d90608f1" category="cell">禁止通知的开始或计划开始的确切时间。</block>
+  <block id="57347427d54a8b3062a13502efbb0b39" category="paragraph">指示警报通知的状态：</block>
+  <block id="4e5f06cf705243a2cf7308548afc1545" category="list-text">*活动*：警报通知禁止处于活动状态。</block>
+  <block id="50530d3f54881ad7130c640aaca2dbae" category="list-text">*未来*：已计划在未来日期和时间禁止警报通知。</block>
+  <block id="57829e1c527aadb9862b10c223954f81" category="paragraph">您可以禁止在当前日期和时间或计划在集群级别为单个集群或多个集群发送警报通知、以便在未来日期和时间启动。</block>
+  <block id="fb0d7f8aefdf99cea1fcfde269bee06a" category="admonition">一个集群可以具有多种禁止类型、其中可以包括多种相同禁止类型的选择。如果在计划的禁止窗口期间已存在禁止类型、则该类型将灰显。要再次选择此禁止类型、请选择*重叠现有*。多个选择的相同禁止类型可能会有重叠时间、或者、如果计划将来的支持、则会处于不同时间。当两个压缩存在重叠时间段时、该功能与一次压缩相同、一次压缩的开始时间从最早的压缩开始、一次压缩的结束时间从最晚的压缩开始。</block>
+  <block id="8c585eacf0d12977061621d6833ec987" category="list-text">选择要开始禁止通知的开始日期和时间。</block>
 </blocks>

@@ -17,6 +17,8 @@ summary: 了解SolidFire Active IQ 中的复制页面。
 
 * <<cluster_pairs,集群对>>
 * <<volume_pairs,卷对>>
+* <<snapmirror_endpoints,SnapMirror端点>>
+* <<snapmirror_relationships,SnapMirror关系>>
 
 
 
@@ -94,6 +96,97 @@ NOTE: 处于活动复制状态的目标卷的异步延迟始终为0 (零)。目�
 |===
 
 
+== SnapMirror端点
+
+在选定集群的*复制*>* SnapMirror端点*页面上、您可以查看有关SnapMirror端点的以下信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 端点ID | 端点标识号。 
+
+
+| 远程集群名称 | 对的远程集群的名称。 
+
+
+| 集群管理IP | 集群管理IP地址。 
+
+
+| IP | 用于虚拟网络的虚拟网络IP地址的范围。 
+
+
+| relationships | 为端点配置的关系数。 
+
+
+| Status | 这是指端点当前是否已连接。其值为*已连接*或*已断开连接*。 
+|===
+
+
+== SnapMirror关系
+
+在选定集群的*复制*>* SnapMirror关系*页面上、您可以查看有关SnapMirror关系的以下信息。
+
+[cols="30,70"]
+|===
+| 标题 | Description 
+
+
+| 端点ID | 端点标识号。 
+
+
+| 源卷 | 源的卷ID。 
+
+
+| 目标集群 | SnapMirror关系中的目标集群的名称。 
+
+
+| 目标卷 | SnapMirror关系中的目标卷的名称。 
+
+
+| State  a| 
+镜像关系的状态。它可以有三个可能的值：
+
+* Uninitialized：目标卷未初始化。
+* Snapmirrored：目标卷已初始化、并已准备好接收SnapMirror更新。
+* Broken-off：目标卷处于读写状态、并且存在快照。
+
+
+
+
+| Status  a| 
+如果此关系当前运行状况良好、则其值可以为*运行状况良好*或*运行状况不正常*。
+
+
+NOTE: 如果手动或计划的更新失败或中止、或者上次计划的更新延迟、则可能会导致出现*运行状况不正常*的值。状态后面的*详细信息*字段显示*运行状况不正常*的原因。
+
+
+
+| 关系类型  a| 
+SnapMirror关系的类型。
+
+
+NOTE: 在SolidFire 系统上、此设置始终设置为 `extended_data_protection`。NetApp系统具有其他类型的有效关系、这些关系不适用于SolidFire 系统。
+
+
+
+| State  a| 
+集群状态：
+
+* 运行状况：集群没有关联的严重错误。
+* offline：无法访问集群。选择链接以查看错误日志。
+* fault：存在与此集群相关的错误。选择链接以查看错误日志。
+
+
+
+
+| 详细信息 | 有助于确定SnapMirror关系的信息。 
+|===
+
+
 == 了解更多信息
 
-https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]
+* https://www.netapp.com/support-and-training/documentation/["NetApp 产品文档"^]
+* https://docs.netapp.com/us-en/ontap/element-replication/index.html["在 NetApp Element 软件和 ONTAP 之间进行复制"^]
+

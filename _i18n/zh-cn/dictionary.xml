@@ -292,7 +292,6 @@
   <block id="6ecb056d430ebf109cb53b71b4e3bbf6" category="cell">显示节点的型号类型。</block>
   <block id="21dffd11e52f3b29376f4508b2ad0b1a" category="cell">服务标签</block>
   <block id="c85128056ac648977b9e0da5daf91c2d" category="cell">分配给节点的唯一服务标签号。</block>
-  <block id="0b78ef57d4dacade728a829821159de3" category="cell">为1GbE或10GbE网络管理任务分配给节点的管理IP MIP地址。</block>
   <block id="70087224b93e8179deda7438fae8e843" category="cell">集群 IP</block>
   <block id="4d08639c19d21e8b1b2dd93fd1ecb110" category="cell">分配给用于在同一集群中的节点之间进行通信的节点的集群IP地址。</block>
   <block id="9f4766e9e0e83d660691c78a09d23354" category="cell">复制端口</block>
@@ -1070,4 +1069,41 @@
   <block id="57829e1c527aadb9862b10c223954f81" category="paragraph">您可以禁止在当前日期和时间或计划在集群级别为单个集群或多个集群发送警报通知、以便在未来日期和时间启动。</block>
   <block id="fb0d7f8aefdf99cea1fcfde269bee06a" category="admonition">一个集群可以具有多种禁止类型、其中可以包括多种相同禁止类型的选择。如果在计划的禁止窗口期间已存在禁止类型、则该类型将灰显。要再次选择此禁止类型、请选择*重叠现有*。多个选择的相同禁止类型可能会有重叠时间、或者、如果计划将来的支持、则会处于不同时间。当两个压缩存在重叠时间段时、该功能与一次压缩相同、一次压缩的开始时间从最早的压缩开始、一次压缩的结束时间从最晚的压缩开始。</block>
   <block id="8c585eacf0d12977061621d6833ec987" category="list-text">选择要开始禁止通知的开始日期和时间。</block>
+  <block id="28b4baca1ac41f0c9cbe42a9ec42628e" category="inline-xref">SnapMirror端点</block>
+  <block id="ac1101609fb27790d21f3e5682730a46" category="list-text"><block ref="6106c5f20c38abc927c216f441b22257" category="inline-xref-macro-rx"></block></block>
+  <block id="b7bae3475f98c5511fcd900e6b4c8f8c" category="inline-xref">SnapMirror关系</block>
+  <block id="ad2c46e1bdf00bc2c2373e711d1d2954" category="list-text"><block ref="c593ef727a82bdc9f5c1b753b116f514" category="inline-xref-macro-rx"></block></block>
+  <block id="f17f50f30412e2177a16f9b4da89f874" category="paragraph">在选定集群的*复制*&gt;* SnapMirror端点*页面上、您可以查看有关SnapMirror端点的以下信息。</block>
+  <block id="6bb4d406451e3685e40319c445ae0352" category="cell">端点ID</block>
+  <block id="32246b37b740b49b6825d9f37e2ee6c5" category="cell">端点标识号。</block>
+  <block id="0e948943e8277507eeeec08bbb91d3b4" category="cell">集群管理IP</block>
+  <block id="6e24b6e3023bd7d9208c26111ae95b8d" category="cell">集群管理IP地址。</block>
+  <block id="fef48b3b39a9c7cdf35ffca8bf736a75" category="cell">IP</block>
+  <block id="ea96be9e75d8d3d690aedae5040edf2f" category="cell">relationships</block>
+  <block id="8f8605419f690965c300901a20d62391" category="cell">为端点配置的关系数。</block>
+  <block id="718d288064e78f83f1ba4c375c26c029" category="cell">这是指端点当前是否已连接。其值为*已连接*或*已断开连接*。</block>
+  <block id="028ac3812784d5be0fd01695fc043cff" category="paragraph">在选定集群的*复制*&gt;* SnapMirror关系*页面上、您可以查看有关SnapMirror关系的以下信息。</block>
+  <block id="6b381cadf674c5e31b229c76f56806c5" category="cell">源卷</block>
+  <block id="5fc8efaf812ad6d749473c5b1e7a1d08" category="cell">源的卷ID。</block>
+  <block id="3b63d6a8b8cc0fb1c86125151f2eca0a" category="cell">目标集群</block>
+  <block id="64afd1e289d3d4ac65cd7bae034156d3" category="cell">SnapMirror关系中的目标集群的名称。</block>
+  <block id="61bf1d352b9b723607cb778169e813a0" category="cell">目标卷</block>
+  <block id="0ebc9eebbe2a97262f813b92e1f22992" category="cell">SnapMirror关系中的目标卷的名称。</block>
+  <block id="46a2a41cc6e552044816a2d04634545d" category="cell">State</block>
+  <block id="1fdf08bae98f520da3e0d1b2000eabac" category="paragraph">镜像关系的状态。它可以有三个可能的值：</block>
+  <block id="8881a06cabd3e842b7977e9044018e5d" category="list-text">Uninitialized：目标卷未初始化。</block>
+  <block id="baaef4c79409be356afa390f0a267777" category="list-text">Snapmirrored：目标卷已初始化、并已准备好接收SnapMirror更新。</block>
+  <block id="8ea0f60fec4bd7852564eff6914e37e5" category="list-text">Broken-off：目标卷处于读写状态、并且存在快照。</block>
+  <block id="2177b3ffa647aac85952207f57133f55" category="paragraph">如果此关系当前运行状况良好、则其值可以为*运行状况良好*或*运行状况不正常*。</block>
+  <block id="163c9089cced4c196e834ce87a1ec90e" category="admonition">如果手动或计划的更新失败或中止、或者上次计划的更新延迟、则可能会导致出现*运行状况不正常*的值。状态后面的*详细信息*字段显示*运行状况不正常*的原因。</block>
+  <block id="2029c90a49e8add716fcc3051a0c01ff" category="cell">关系类型</block>
+  <block id="b2896d0a757d4adea7b0bf1946d16ab9" category="paragraph">SnapMirror关系的类型。</block>
+  <block id="2e5e6f53be4c64301d71ec17f9666006" category="admonition">在SolidFire 系统上、此设置始终设置为<block ref="a6c02c92cdc6c7fe213f68be0ab9ee11" prefix=" " category="inline-code"></block>。NetApp系统具有其他类型的有效关系、这些关系不适用于SolidFire 系统。</block>
+  <block id="ddf35be1d25ba7857330965fdbcd63ec" category="paragraph">集群状态：</block>
+  <block id="6c1691f6c440f43922bce2a3183b9614" category="list-text">运行状况：集群没有关联的严重错误。</block>
+  <block id="353d8a4aaa6f9c840d2d0330d5cb9610" category="list-text">offline：无法访问集群。选择链接以查看错误日志。</block>
+  <block id="9810bf56aaa37a450fe2ace2a59a888f" category="list-text">fault：存在与此集群相关的错误。选择链接以查看错误日志。</block>
+  <block id="9f360968c28895acf09b091f83e3603f" category="cell">有助于确定SnapMirror关系的信息。</block>
+  <block id="42a1881fef50454fa6bd56b43e9ed96e" category="inline-link">在 NetApp Element 软件和 ONTAP 之间进行复制</block>
+  <block id="ccae24276cef39694a819c260df1defb" category="list-text"><block ref="ccae24276cef39694a819c260df1defb" category="inline-link-rx"></block></block>
 </blocks>

@@ -60,7 +60,7 @@ summary: 了解如何在SolidFire Active IQ 中查看SolidFire 存储节点详�
 | 序列号 | 分配给节点的唯一序列号。 
 
 
-| 管理IP | 为1GbE或10GbE网络管理任务分配给节点的管理IP MIP地址。 
+| 管理IP | 为1GbE或10GbE网络管理任务分配给节点的管理IP地址。 
 
 
 | 集群 IP | 分配给用于在同一集群中的节点之间进行通信的节点的集群IP地址。 

@@ -1106,4 +1106,5 @@
   <block id="9f360968c28895acf09b091f83e3603f" category="cell">有助于确定SnapMirror关系的信息。</block>
   <block id="42a1881fef50454fa6bd56b43e9ed96e" category="inline-link">在 NetApp Element 软件和 ONTAP 之间进行复制</block>
   <block id="ccae24276cef39694a819c260df1defb" category="list-text"><block ref="ccae24276cef39694a819c260df1defb" category="inline-link-rx"></block></block>
+  <block id="f5f48e4a05f564b44c9541295334dd2e" category="paragraph">要查看给定容量许可池、您必须具有查看该池中包括的所有集群的权限。如果涉及父级和子级公司关系、请与您的客户经理联系、确认已正确记录此关系。否则、发生原因 容量许可池可能会变得不可用。</block>
 </blocks>

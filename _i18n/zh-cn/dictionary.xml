@@ -1014,7 +1014,6 @@
   <block id="1283e547f2c97bde5254234dd71e8920" category="cell">在触发VMware警报并向SolidFire Active IQ 报告时发送通知。</block>
   <block id="8f7bdd75076dbc076948c8a43fa2529c" category="paragraph">SolidFire Active IQ 警报的订阅者会针对系统上触发的每个警报接收不同的状态电子邮件。与警报关联的状态电子邮件有三种：</block>
   <block id="472062bb6f5f96a2db31c5e5b3da2b6e" category="admonition">除了这些方法之外、SolidFire Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的SolidFire Active IQ API集合列表、则必须联系NetApp支持部门。</block>
-  <block id="f107820fc2ea40af48df224b45278cae" category="paragraph">这些图形将根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：绿色(无)、黄色(有限制)或红色(高)。有关详细信息、请参见下图示例：</block>
   <block id="1f8599a5bc6899eb5bf58ed4e4161fee" category="summary">了解SolidFire Active IQ 中的所有节点视图页面。</block>
   <block id="0975b9d0e95957f2f96d932db082c1ac" category="doc">所有节点视图</block>
   <block id="433600042717615fb07744743de63c31" category="paragraph">从*所有节点视图*下拉列表中选择公司名称时、您可以查看有关公司所有节点的信息、包括受限节点。选择公司名称后、它将替换顶部导航栏中的*所有节点视图*。</block>
@@ -1107,4 +1106,10 @@
   <block id="42a1881fef50454fa6bd56b43e9ed96e" category="inline-link">在 NetApp Element 软件和 ONTAP 之间进行复制</block>
   <block id="ccae24276cef39694a819c260df1defb" category="list-text"><block ref="ccae24276cef39694a819c260df1defb" category="inline-link-rx"></block></block>
   <block id="f5f48e4a05f564b44c9541295334dd2e" category="paragraph">要查看给定容量许可池、您必须具有查看该池中包括的所有集群的权限。如果涉及父级和子级公司关系、请与您的客户经理联系、确认已正确记录此关系。否则、发生原因 容量许可池可能会变得不可用。</block>
+  <block id="77b5f187e425e8a74f78bc33173a6556" category="paragraph">SolidFire Active IQ 中的图形和日期范围彼此无缝集成。选择日期范围时，该页面上的*Node Throttling (节点限制)*和*Total Volume Th吞吐量*图将调整为所选范围。每个图显示的默认日期范围为7天。从图形选择选项卡中选择节点后、这些图形将更改为新选择的节点。</block>
+  <block id="ddbda8937e06c693f2a47e57f41d458a" category="paragraph">节点限制*图根据选定节点上托管的卷的最小和最大IOPS设置显示选定时间段内的节点限制。颜色表示限制量：</block>
+  <block id="03e86b05e1b5286b660c8a23c9f078a6" category="list-text">绿色：节点未受到控制。允许卷执行的IOPS最高可达其配置的最大IOPS。</block>
+  <block id="dc8427aa0b7126878455064a038e5809" category="list-text">黄色：节点遇到限制。卷会从其最大IOPS设置中受到限制、但性能仍保持在其最小IOPS设置或更高。</block>
+  <block id="960834da3ed67c2325c72e0370fc8205" category="list-text">红色：节点遇到高限制。如果卷受到更严重的限制、则性能可能会低于最小IOPS设置。</block>
+  <block id="504a73ee059265d2d8bb14a8164db243" category="paragraph">"*总卷吞吐量*"图形显示选定节点的主卷吞吐量之和。此图显示了卷读取和写入吞吐量之和。它不包括元数据或其他节点流量。此外、如果某个节点上存在卷、则还会考虑这一点、这会导致在从某个节点传输卷时吞吐量下降。</block>
 </blocks>

@@ -764,7 +764,6 @@
   <block id="cb0b3ac9b7a179d7ab7a6fca23f53ad7" category="cell">关联快照的数量。</block>
   <block id="8aa8c731cfe2c1c5fc7e8d8161be302a" category="cell">已启用512e</block>
   <block id="4b70e4e226aa2663d010aeae818edca9" category="cell">标识是否已在卷上启用512e。</block>
-  <block id="49040853732d48deb2df7eebcd95b127" category="cell">确定卷是否因主存储节点上的高负载而受到限制。</block>
   <block id="fe6f6567eb042d45b55b29aa9a29df5b" category="cell">已配对卷</block>
   <block id="3864a6411a8582c09e9f190a2d97c876" category="cell">指示卷是否已配对。</block>
   <block id="bb1bce6ceb9138a27ff4a45ffa2b6cc4" category="cell">卷创建任务完成的时间。</block>
@@ -1112,4 +1111,5 @@
   <block id="dc8427aa0b7126878455064a038e5809" category="list-text">黄色：节点遇到限制。卷会从其最大IOPS设置中受到限制、但性能仍保持在其最小IOPS设置或更高。</block>
   <block id="960834da3ed67c2325c72e0370fc8205" category="list-text">红色：节点遇到高限制。如果卷受到更严重的限制、则性能可能会低于最小IOPS设置。</block>
   <block id="504a73ee059265d2d8bb14a8164db243" category="paragraph">"*总卷吞吐量*"图形显示选定节点的主卷吞吐量之和。此图显示了卷读取和写入吞吐量之和。它不包括元数据或其他节点流量。此外、如果某个节点上存在卷、则还会考虑这一点、这会导致在从某个节点传输卷时吞吐量下降。</block>
+  <block id="f1fa7b7cc46f8f0571dab3e8216c76eb" category="cell">表示卷的当前限制。此值不包括卷上的历史限制。</block>
 </blocks>

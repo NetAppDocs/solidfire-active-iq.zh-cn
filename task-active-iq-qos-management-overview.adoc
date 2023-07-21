@@ -11,12 +11,13 @@ summary: 了解SolidFire Active IQ 中的QoS管理页面。
 
 
 [role="lead"]
-在选定集群的侧面板上提供的* QoS管理*页面中、您可以查看有关集群中节点的QoS建议和限制的信息。
+从选定集群侧面板中的*QoS Management*页面，您可以查看有关集群中节点的QoS建议、限制和卷的信息。
 
-了解如何查看有关选定节点的QoS建议和限制的信息：
+了解如何查看有关选定节点的QoS建议、限制和卷的信息：
 
 * link:task-active-iq-recommendations.html["建议"]
 * link:task-active-iq-throttling.html["节点限制"]
+* link:task-active-iq-busiest-volumes.html["最繁忙的卷"]
 
 
 

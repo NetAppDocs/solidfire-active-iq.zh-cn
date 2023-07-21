@@ -69,6 +69,8 @@ sidebar:
         url: "/task-active-iq-recommendations.html"
       - title: 节点限制
         url: "/task-active-iq-throttling.html"
+      - title: 最繁忙的卷
+        url: "/task-active-iq-busiest-volumes.html"
     - title: 虚拟机
       url: "/task-active-iq-virtual-machines.html"
     - title: VMware警报

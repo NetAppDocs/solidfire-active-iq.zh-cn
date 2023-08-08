@@ -724,7 +724,6 @@
   <block id="2bc5a323ec4c5f81b720526e8aadd21e" category="cell">二级节点ID</block>
   <block id="a8c5372cb84d7d3cefd81f7cca2508d1" category="cell">此卷的二级节点列表。在过渡状态期间可以是多个值、例如二级节点更改、但通常只有一个值。</block>
   <block id="e3fa9173825e8d72d3109748c25adb2b" category="cell">QoS限制</block>
-  <block id="b7704dec80bad8b4f8c5564e2d1d6f28" category="paragraph">确定卷是否因主存储节点上的高负载而受到限制：</block>
   <block id="40c1f7a2846a63dc74ce6b9dbc7933dc" category="list-text">绿色=高达20%</block>
   <block id="89d6f6a6ae8c5ed89ceadff57f866134" category="list-text">黄色=大于20%</block>
   <block id="a766a96a4550397e3be62686e9dba4bf" category="list-text">红色=超过80%</block>
@@ -742,8 +741,6 @@
   <block id="7d5a20f283f1f159bc8fca5cea5abdf2" category="paragraph">打开活动卷的页面后、您可以从信息栏查看最近的卷数据。</block>
   <block id="e5e232275261e481cb1332fe1e05f070" category="cell">系统为卷生成的 ID 。</block>
   <block id="94a1800545581d04983407fd1d145e62" category="cell">卷的总大小。</block>
-  <block id="7da55ffd0ff54b317006c52ea7f2c0e1" category="paragraph">显示卷的容量：</block>
-  <block id="abec01fb58480a49a084850b03ff2d7c" category="list-text">红色=高于95%。</block>
   <block id="42bbfc003515ffd17bbf2687a043f11d" category="cell">平均 IOPS</block>
   <block id="e3b8968fd9318f5d739250d54e769ff4" category="cell">过去30分钟对卷执行的平均IOPS数。</block>
   <block id="edd5221a3f19c0c3519847deb797f926" category="cell">平均吞吐量</block>
@@ -1124,4 +1121,7 @@
   <block id="fb6f38bbf25d3ddbca0c6a827d91cbbc" category="paragraph"><block ref="fb6f38bbf25d3ddbca0c6a827d91cbbc" category="inline-image-macro-rx" type="image"></block></block>
   <block id="4cdebd141dff1c095e06cf5208c27b2b" category="paragraph">将鼠标指针置于图中的任意点、可查看有关读取、写入和总操作的时间点详细信息。如果某个卷在选定时间范围的一部分时间内不在节点上、则该卷将以虚线表示</block>
   <block id="20b3b5b27ff183797189ac06f1b32a54" category="section-title">导出最繁忙的节点数据</block>
+  <block id="86d684bea1d4ec8e7ab5dd525434db07" category="paragraph">表示卷的当前限制。</block>
+  <block id="8affec94c4ca90859e2feacff861a492" category="paragraph">此值不包括卷上的历史限制。</block>
+  <block id="b58d6152d74cfc9445a90c470e4070bc" category="paragraph">显示卷的填充度。</block>
 </blocks>

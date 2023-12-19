@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>选定集群的报告选项</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="选定集群的报告选项" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/solidfire-active-iq/task-active-iq-reporting-options.html" />
+	<meta property="og:description" content="了解SolidFire Active IQ 中选定集群的报告选项。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/solidfire-active-iq/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="了解SolidFire Active IQ 中选定集群的报告选项。">
+  <meta name="keywords" content=" solidfire, active, iq, reporting, cluster"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/solidfire-active-iq/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+
+  <!-- Combined CSS -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/solidfire-active-iq/css/ie-netappdocs.css">
+
+  
+  <link rel="stylesheet" href="/zh-cn/solidfire-active-iq/css/ie-landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/solidfire-active-iq/css/ie-tabbed-blocks.css" type="text/css">
+  <!-- Canonical url -->
+  <link rel="canonical" href="https://docs.netapp.com/zh-cn/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="x-default" href="https://docs.netapp.com/us-en/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://docs.netapp.com/zh-cn/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="en" href="https://docs.netapp.com/us-en/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="ja" href="https://docs.netapp.com/ja-jp/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="ko" href="https://docs.netapp.com/ko-kr/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="zh-Hant" href="https://docs.netapp.com/zh-tw/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="de" href="https://docs.netapp.com/de-de/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="es" href="https://docs.netapp.com/es-es/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="fr" href="https://docs.netapp.com/fr-fr/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <link rel="alternate" hreflang="it" href="https://docs.netapp.com/it-it/solidfire-active-iq/task-active-iq-reporting-options.html" />
+  <!-- Top level site integrations -->
+<script type="text/javascript" src="https://cdn.cookielaw.org/consent/72570c5c-fe30-465f-b0e0-b77f7fb4ae34/OtAutoBlock.js"></script>
+    <script type="text/javascript" src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-document-language="true" data-domain-script="72570c5c-fe30-465f-b0e0-b77f7fb4ae34"></script>
+    <script type="text/javascript">function OptanonWrapper() { }</script>
+    <script type="text/plain" class="optanon-category-C0002" src="https://assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js"></script>
+    <script class="optanon-category-C0001">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.setAttributeNode(d.createAttribute('data-ot-ignore'));j.setAttribute('class','optanon-category-C0001');j.async=true;
+        j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MD73T9M');</script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  
+  <script>
+    $(document).ready(function() {
+      const MASTHEAD_OFFSET = 65;
+      const SECTIONS = $("main h2, main h3");
+      // PAGE NAV - Init
+      if (SECTIONS.length == 0) {
+        // remove if there is no elements
+        /*
+        $("#ie-right-navbar").remove();
+        $("#ie-right-navbar-collapse").remove();
+        */
+      } else {
+        $(".page-nav-title").css('display', 'block');
+        for (var i = 0; i < SECTIONS.length; i++) {
+          var sectionId = $(SECTIONS[i]).attr('id');
+          var sectionName = $(SECTIONS[i]).text();
+          var subClass = $(SECTIONS[i]).is("h3") ? ' page-nav__sublink' : '';
+          $("#page-menu").append('<li class="page-nav-item"><a href="#' + sectionId + '" class="page-nav__link' + subClass + '">' + sectionName + '</a></li>');
+        }
+      }
+    });
+  </script>
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/solidfire-active-iq/js/na-search.js'></script><script src='/zh-cn/solidfire-active-iq/js/ie-clouddocs.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><script>
+    /*
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+      */
+  </script>
+  <script src='/zh-cn/solidfire-active-iq/js/custom-dropdown.js'></script>
+  <script src='/zh-cn/solidfire-active-iq/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/solidfire-active-iq/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/solidfire-active-iq/js/jszip.min.js'></script><script src='/zh-cn/solidfire-active-iq/js/ie-pdf-ux.js'></script></head>
+
+
+  <body class role="document" data-flavor="">
+    <div class="skip-to-main">
+      <a href="#main" >Skip to main content</a>
+    </div><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MD73T9M"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="page" class="">
+      <div id="ie-phone-menu" class=""></div>
+      <div id="ie-content-wrap" class="">
+        <nav id="ie-new-header">
+    <ul>
+        <li id="ie-phone-menu-button">
+            <a href="#">
+                <image id="" src="/zh-cn/solidfire-active-iq/images/hamburger.svg" alt="menu" />
+            </a>
+        </li>
+
+        <li>
+            <a href="https://www.netapp.com/cn">
+                <image id="ie-header-logo" src="/zh-cn/solidfire-active-iq/images/netapp_logo.svg" alt="netapp" />
+            </a>
+        </li>
+        <li id="ie-header-docs">
+            <a href="https://www.netapp.com/support-and-training/documentation/">文档</a>
+        </li>
+
+        <!-- Empty container to push header left with or without lang selector -->
+        <li id="empty-container" style="margin-left: auto">
+        </li>
+        <!-- Start Language Selector --><li id="ie-language-dropdown">
+            <div id="language-dropdown" class="custom-dropdown custom-dropdown-lang">
+                <div class="custom-dropdown-select custom-dropdown-select-lang">
+                    <img src="/zh-cn/solidfire-active-iq/images/language_white_24dp.svg" class="n-globe__icon" />
+                    <span class="lang-name">简体中文</span>
+                    <img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu"><li>
+                        <a href="https://docs.netapp.com/zh-cn/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">简体中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/us-en/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">English</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ja-jp/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">日本語</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/ko-kr/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">한국어</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/zh-tw/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">繁體中文</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/de-de/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">Deutsch</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/es-es/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">Español</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/fr-fr/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">Français</span></a>
+                    </li><li>
+                        <a href="https://docs.netapp.com/it-it/solidfire-active-iq/task-active-iq-reporting-options.html"
+                            target="_self"><span translate="no" class="notranslate">Italiano</span></a>
+                    </li></ul>
+            </div>
+            </li>
+        <!-- End Language Selector -->
+
+
+        <li id="ie-allnetapp">
+            <div id="allnetapp-dropdown" class="custom-dropdown custom-dropdown-allnetapp">
+                <div class="custom-dropdown-select custom-dropdown-select-allnetapp">
+                    <img src="/zh-cn/solidfire-active-iq/images/apps_white_24dp.svg" alt="" class="allnetapp-icon" />
+                    <span class="allnetapp-name">全部来自 NetApp</span>
+                    <img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown header invisible" />
+                    <img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup header" />
+                    </button>
+                </div>
+
+                <ul class="custom-dropdown-menu allnetapp-dropdown">
+                    <li>
+                        <a href="https://bluexp.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">BlueXP</span></a>
+                    </li>
+                    <li>
+                        <a href="https://mysupport.netapp.com/site/"
+                            target="_self"><span translate="no" class="notranslate">支持</span></a>
+                    </li>
+                    <li>
+                        <a href="https://kb.netapp.com/"
+                            target="_self"><span translate="no" class="notranslate">知识库</span></a>
+                    </li>
+                    <li>
+                        <a href="https://www.netapp.com/zh-hans/support-and-training/netapp-learning-services/"
+                            target="_self"><span translate="no" class="notranslate">训练</span></a>
+                    </li>
+                </ul>
+            </div>
+
+        </li>
+
+    </ul>
+</nav>
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+
+<div id="ie-new-sidebar-collapse" style="display: none">
+    <img id="sidebar-expand" class="ie-searchbox-icon" src="/zh-cn/solidfire-active-iq/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-new-sidebar">
+    <div id="ie-product-identity-lockup">
+        <div id="sidebar-collapse" class="">
+            <img src="/zh-cn/solidfire-active-iq/images/double_arrow.svg" alt="" />
+        </div>
+        <div id="ie-breadcrumb" class="">
+  <ul class="ie-breadcrumb">
+    <li class="">
+      <a href="https://docs.netapp.com">所有文档</a>
+    </li>
+    
+    
+
+    
+  </ul>
+  
+  <div class="ie-product-name" >
+    <!--<a href="/zh-cn/solidfire-active-iq/">-->
+      SolidFire Active IQ
+    <!--</a>-->
+  </div>
+</div>
+
+            
+
+        
+        
+
+<div id="ie-searchbox" class="ie-searchbox-sidebar ">
+    <img class="ie-searchbox-icon" src="/zh-cn/solidfire-active-iq/images/loupe.svg" alt=""/>
+    <div id="react-search" 
+        data-search-html="/zh-cn/solidfire-active-iq/search.html" 
+        data-type="widget"
+        data-placeholder="搜索文档"
+        data-no-results-found="未找到 {query} 的相关结果"
+        data-did-you-mean="搜索 {suggestion}。"
+        data-no-results-found-did-you-mean="未找到 {query} 的相关结果。您是指 {suggestion}？"
+        data-results-found="找到 {hitCount} 个结果"
+        data-error-message="发生错误。请重试。"
+        data-error-reset="重置搜索"
+        data-sk-es-pf-indexes="" 
+        data-flavor="">
+    </div>
+</div>
+        
+    </div>
+    <div id="ie-new-toc"><script>
+  let sidebarAccordion = true;
+
+  /* specific css rules for Mac */
+  if(navigator.platform.match('Mac') !== null) {
+    document.body.setAttribute('class', 'OSX');
+  }
+
+</script>
+
+<div id="ie-sidebar-container">
+  <ul id="ie-sidebar-list" ><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="NetApp SolidFire Active IQ"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/index.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/solidfire-active-iq/index.html">
+        NetApp SolidFire Active IQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="开始使用SolidFire Active IQ"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/solidfire-active-iq/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/solidfire-active-iq/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 开始使用SolidFire Active IQ</div>-->
+         开始使用SolidFire Active IQ
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-get-started-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-get-started-overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="了解SolidFire Active IQ"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/concept-active-iq-learn-about-active-iq.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/concept-active-iq-learn-about-active-iq.html">
+        了解SolidFire Active IQ
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="启用SolidFire Active IQ 报告"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-enable-reporting.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-enable-reporting.html">
+        启用SolidFire Active IQ 报告
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="使用SolidFire Active IQ UI"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-use-the-user-interface.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-use-the-user-interface.html">
+        使用SolidFire Active IQ UI
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="管理SolidFire Active IQ"
+      data-li-level="1" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-1  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/solidfire-active-iq/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/solidfire-active-iq/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 管理SolidFire Active IQ</div>-->
+         管理SolidFire Active IQ
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-manage-overview.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-manage-overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="所有集群视图"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/solidfire-active-iq/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/solidfire-active-iq/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 所有集群视图</div>-->
+         所有集群视图
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-all-clusters-view-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-all-clusters-view-overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="所有集群视图信息板"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-all-clusters-view-dashboard.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-all-clusters-view-dashboard.html">
+        所有集群视图信息板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="警报"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-alerts.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-alerts.html">
+        警报
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="容量许可"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-capacity-licensing.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-capacity-licensing.html">
+        容量许可
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="术语容量"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-term-capacity.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-term-capacity.html">
+        术语容量
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="选择一个集群"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/solidfire-active-iq/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/solidfire-active-iq/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> 选择一个集群</div>-->
+         选择一个集群
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-select-cluster-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-select-cluster-overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="单个集群视图信息板"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-single-cluster-view-dashboard.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-single-cluster-view-dashboard.html">
+        单个集群视图信息板
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="报告"
+      data-li-level="3#" 
+      class="  ie-sidebar-selected    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-reporting-options.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-reporting-options.html">
+        报告
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="节点"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-nodes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-nodes.html">
+        节点
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="驱动器"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task_active_iq_drives.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task_active_iq_drives.html">
+        驱动器
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Volumes"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/solidfire-active-iq/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/solidfire-active-iq/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> Volumes</div>-->
+         Volumes
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task_active_iq_volumes_overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task_active_iq_volumes_overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="活动卷"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-active-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-active-volumes.html">
+        活动卷
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Snapshot和Snapshot计划"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-snapshots-and-schedules.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-snapshots-and-schedules.html">
+        Snapshot和Snapshot计划
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="Replication"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task_active_iq_replication.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task_active_iq_replication.html">
+        Replication
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="虚拟卷"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-virtual-volumes.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-virtual-volumes.html">
+        虚拟卷
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="QoS管理"
+      data-li-level="2" 
+      class=" sidebar-folder    "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="" 
+    ><a class="ie-sidebar-menuitem-2  ie-sidebar-button " href="#">
+        <img class="ie-sidebar-icon ie-sidebar-button open" src="/zh-cn/solidfire-active-iq/images/link_expand.svg" alt="" />
+        <img class="ie-sidebar-icon ie-sidebar-button close" src="/zh-cn/solidfire-active-iq/images/link_collapse.svg" alt="" />
+        <!--<div class="" style="display: inline;"> QoS管理</div>-->
+         QoS管理
+      </a>
+      <ul class="">
+        <li 
+      data-pdf-exists="true" 
+      data-pdf-filename="概述"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-qos-management-overview.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-qos-management-overview.html">
+        概述
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="建议"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-recommendations.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-recommendations.html">
+        建议
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="节点限制"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-throttling.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-throttling.html">
+        节点限制
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="最繁忙的卷"
+      data-li-level="3#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-busiest-volumes.html" 
+    ><a class="ie-sidebar-menuitem-3 " href="/zh-cn/solidfire-active-iq/task-active-iq-busiest-volumes.html">
+        最繁忙的卷
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="虚拟机"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-virtual-machines.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-virtual-machines.html">
+        虚拟机
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="VMware警报"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-vmware-alarms.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-vmware-alarms.html">
+        VMware警报
+      </a></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="所有节点视图"
+      data-li-level="2#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-all-nodes-view.html" 
+    ><a class="ie-sidebar-menuitem-2 " href="/zh-cn/solidfire-active-iq/task-active-iq-all-nodes-view.html">
+        所有节点视图
+      </a></li></ul></li><li 
+      data-pdf-exists="true" 
+      data-pdf-filename="故障排除和支持"
+      data-li-level="1#" 
+      class="   "
+      dale-page-url="/task-active-iq-reporting-options.html" 
+      dale-entry-url="/task-active-iq-troubleshoot-support.html" 
+    ><a class="ie-sidebar-menuitem-1 " href="/zh-cn/solidfire-active-iq/task-active-iq-troubleshoot-support.html">
+        故障排除和支持
+      </a></li></ul>
+</div>
+<script>
+
+  $(".ie-sidebar-button").click(function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+
+    expandedLI = $('li.ie-sidebar-expand')
+
+    const li = $(this).closest("li");
+
+    const parentsLI = $(li).parents('li');
+
+    expandedLI.map(element => {
+      if (sidebarAccordion && !li.hasClass('ie-sidebar-expand') && jQuery.inArray(expandedLI[element], parentsLI) == -1) {
+        $(expandedLI[element]).toggleClass('ie-sidebar-expand');
+        $(expandedLI[element]).children("ul").animate({ height: 'toggle' }, 400, function () {
+          $(li).children("ul").toggleClass('ie-sidebar-open');
+
+        })
+      }
+
+    })
+
+    $(li).toggleClass('ie-sidebar-expand');
+    $(li).children("ul").animate({ height: 'toggle' }, 400, function () {
+      $(li).children("ul").toggleClass('ie-sidebar-open');
+    })
+  });
+
+
+  
+    $("li.ie-sidebar-selected").parents('ul').toggleClass("ie-sidebar-open");
+    $("li.ie-sidebar-selected").toggleClass("ie-sidebar-expand")
+    $("ul.ie-sidebar-open").parent().toggleClass("ie-sidebar-expand");
+    $("li.ie-sidebar-selected").children('ul').toggleClass("ie-sidebar-open")
+  
+  
+</script>
+    </div>
+</div>
+<script>
+
+    
+    let sidebarScrollTopPosition = 0;
+    $("#ie-new-toc").on("scroll", function () {
+        if (sidebarScrollTopPosition == 0) {
+            $.cookie("sidebarScroll", $("#ie-new-toc").scrollTop(), {
+                path: "/zh-cn/solidfire-active-iq"
+            });
+        }
+
+        if ($("#ie-new-toc").scrollTop() > 0) {
+            $('#ie-product-identity-lockup').addClass('ie-addShadow');
+        } else {
+            $('#ie-product-identity-lockup').removeClass('ie-addShadow');
+        }
+    });
+
+    $(function () {
+        if ($.cookie("sidebarScroll")) {
+            $("#ie-new-toc").scrollTop($.cookie("sidebarScroll"));
+        }
+    });
+
+    function setSidebarBottom() {
+        const footerGap = PXinViewport($(".n-footer"));
+        document.getElementById("ie-new-sidebar").style.bottom = Math.max(0, footerGap) + "px";
+    }
+
+    window.onscroll = () => {
+        setSidebarBottom();
+    };
+
+    $("#sidebar-collapse").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        if ($.cookie("sidebarScroll")) {
+            sidebarScrollTopPosition = $.cookie("sidebarScroll");
+        }
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 350, function () {
+            $("#ie-new-sidebar-collapse").show();
+            $("#ie-new-sidebar").removeClass("open")
+            $("#ie-new-sidebar").addClass("close")
+            $("#ie-new-sidebar").removeAttr("style")
+        });
+        $(".ie-content-pane").animate({ width: (width + sidebarWidth), marginLeft: (marginLeft - sidebarWidth) }, 350, function () {
+            resizeContent()
+        })
+
+    });
+    $("#sidebar-expand").click(function (e) {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        e.preventDefault();
+        const width = $(".ie-content-pane").width();
+        const marginLeft = parseInt($(".ie-content-pane").css('marginLeft'));
+
+        $("#ie-new-sidebar").animate({ width: 'toggle' }, 250, function () {
+            $('#ie-new-sidebar').css('display', 'flex');
+            $("#ie-new-sidebar-collapse").hide();
+            $("#ie-new-sidebar").removeClass("close")
+            $("#ie-new-sidebar").addClass("open")
+            setSidebarBottom();
+
+            if (sidebarScrollTopPosition != 0) {
+                $.cookie("sidebarScroll", sidebarScrollTopPosition, {
+                    path: "/zh-cn/solidfire-active-iq"
+                })
+                $("#ie-new-toc").scrollTop(sidebarScrollTopPosition);
+                sidebarScrollTopPosition = 0;
+            }
+        });
+        $(".ie-content-pane").animate({ width: (width - sidebarWidth), 'marginLeft': (marginLeft + sidebarWidth) }, 250, function () {
+            resizeContent()
+        })
+    });
+    function resizeContent() {
+        const sidebarWidth = $("#ie-new-sidebar").width() - $("#ie-new-sidebar-collapse").width();
+        const rightNavbarVisible =  $("#ie-right-navbar").css('display') && $("#ie-right-navbar").css('display') != 'none';
+        const sidebarVisible = $("#ie-new-sidebar").css('display') != 'none';
+        const rightNavbarWidth = $("#ie-right-navbar").width();
+        const rightNavbarCollapseWidth = $("#ie-right-navbar-collapse").width();
+        const rightNavbarCollapseVisible = $("#ie-right-navbar-collapse").css('display') && $("#ie-right-navbar-collapse").css('display') != 'none';
+        
+        if (rightNavbarVisible && sidebarVisible) {
+            $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarWidth}px)`)
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+        } else if (sidebarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${sidebarWidth}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${sidebarWidth + rightNavbarCollapseWidth}px)`)
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar").width()}px)`)
+            }
+
+        } else if (rightNavbarVisible) {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            $(".ie-content-pane").width(`calc(100% - ${rightNavbarWidth}px)`)
+        } else {
+            $(".ie-content-pane").css('marginLeft', `${$("#ie-new-sidebar-collapse").width()}px`)
+            if (rightNavbarCollapseVisible) {
+                $(".ie-content-pane").width(`calc(100% - ${rightNavbarCollapseWidth}px)`);
+            } else {
+                $(".ie-content-pane").width(`calc(100% - ${$("#ie-new-sidebar-collapse").width()}px) `);
+            }
+            
+        }
+    }
+    $(window).on("resize load", function () {
+        setSidebarBottom();
+        resizeContent()
+    });
+
+
+</script>
+
+<div class="ie-content-pane ie-component-detail-content ie-component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content" id="main">
+      <!-- include utility.html -->
+      <div class="ie-info-disclaimer">
+    <span>
+      <div class="ie-info-disclaimer-container">
+        <div class="ie-info-disclaimer-icon">
+          <img src="/zh-cn/solidfire-active-iq/images/notification-icons.svg" class="luci-icon" alt="" />
+        </div>
+        <div class="ie-info-disclaimer-content">
+          <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+        </div>
+        <div style="clear:both;"></div>
+      </div>
+    </span>
+  </div><div class="ie-component-detail-heading-wrap">
+  <h1 class="ie-component-detail-heading">选定集群的报告选项</h1>
+</div>
+
+<div id="ie-byline">
+  
+<div class="page-details">
+    
+        
+            <time datetime="2022-12-14 18:18:54 +0000">12/14/2022</time>
+        
+    
+    
+        <span>贡献者
+        </span>
+    
+    
+</div>
+<div class="page-controls">
+    <div id="contribute-dropdown" class="custom-dropdown custom-dropdown-contrib" >
+        <div class="custom-dropdown-select custom-dropdown-select-contrib">
+        <span class="contrib-name"><img src="/zh-cn/solidfire-active-iq/images/discuss-sm.svg" alt="" class="github-icon" />建议更改</span>
+        <img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" alt="" class="custom-icon chevrondown invisible" />
+        <img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" alt="" class="custom-icon chevronup" />
+        </div>
+        <ul class="custom-dropdown-menu suggested-changes-dropdown"><li>
+                <a target="_blank" href="https://github.com/NetAppDocs/solidfire-active-iq.zh-cn/issues/new?template=new-from-page.yml&page-url=https://docs.netapp.com/zh-cn/solidfire-active-iq/task-active-iq-reporting-options.html&page-title=选定集群的报告选项" class="page-nav-contribute-link" role="button">请求文档更改</a>
+            </li><li> 
+                <a target="_blank" href="https://github.com/NetAppDocs/solidfire-active-iq/blob/main/task-active-iq-reporting-options.adoc" class="page-nav-contribute-link" role="button">编辑此页面</a>
+            </li><li><a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  >了解如何贡献</a></li>
+        </ul>
+    </div>
+    <div id="pdf-control-container">
+        <div class="n-pdf-header">
+            <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+                <img class="adobe-icon" src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>PDF<img src="/zh-cn/solidfire-active-iq/images/dropdown-arrow.svg" class="custom-icon" alt="" />
+            </a>
+        </div>
+        <div class="n-pdf-body-container">
+            <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+                    
+                    
+                    
+                    <a target="_blank" class="pdf-download-link" href="/zh-cn/solidfire-active-iq/pdfs/fullsite-sidebar/NetApp_SolidFire_Active_IQ.pdf" >
+                    <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>本文档站点的 PDF</a>
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/solidfire-active-iq/pdfs/sidebar/开始使用SolidFire_Active_IQ.pdf" 
+            
+          >
+            <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>
+            开始使用SolidFire Active IQ
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/solidfire-active-iq/pdfs/sidebar/管理SolidFire_Active_IQ.pdf" 
+            
+          >
+            <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>
+            管理SolidFire Active IQ
+          </a>
+          
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/solidfire-active-iq/pdfs/sidebar/所有集群视图.pdf" 
+            
+          >
+            <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>
+            所有集群视图
+          </a>
+          
+
+
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/solidfire-active-iq/pdfs/sidebar/选择一个集群.pdf" 
+            
+          >
+            <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>
+            选择一个集群
+          </a>
+          
+
+
+
+
+    <ul class="subfolders" id="pdf-remove" style="display:none;"><li class="active"></li></ul>
+  
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/solidfire-active-iq/pdfs/sidebar/Volumes.pdf" 
+            
+          >
+            <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>
+            Volumes
+          </a>
+          
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          
+          
+          
+          <a target="_blank" class="pdf-download-link"
+            
+              href="/zh-cn/solidfire-active-iq/pdfs/sidebar/QoS管理.pdf" 
+            
+          >
+            <img src="/zh-cn/solidfire-active-iq/images/pdf-icon.png" alt="" width="16" height="16"/>
+            QoS管理
+          </a>
+          
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+
+
+        </li>
+      </ul>
+    
+
+  
+
+
+
+</li></ul>
+            <div class="zip-pdf-link-container" style="display: none;">   
+                <a href="#" id="zipPdf">
+                <img src="/zh-cn/solidfire-active-iq/images/pdf-zip.png" alt="" width="16" height="16"/>
+                <pre>单独 PDF 文档的收集<span class="zip-size"></span></pre>
+                </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+        </div>
+    </div>        
+<script>
+$("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+$("#toggleButtonPdf").on('click', function(e){ 
+    e.stopPropagation();
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+});
+
+//hide is by clicking outside pdfcontainer
+$(document).on('click', function (e) {
+    if ($('#toggleContainerPdf').is(':visible') && !$('.n-pdf-body-container').is(e.target) && !$('.n-pdf-body-container').has(e.target).length)  {
+        
+        $("#toggleContainerPdf").toggle('display');
+        $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+        $("#toggleButtonPdf").removeClass("active");
+    }
+});
+</script>
+<script>
+    function getPdfLocation() {
+        const pdfLocation = window.scrollX + document.querySelector('#pdf-control-container').getBoundingClientRect().left
+        if (pdfLocation < 450) {
+            $(".n-pdf-body-container").addClass("block")
+        } else {
+            $(".n-pdf-body-container").removeClass("block")
+        }
+    
+    }
+    $( window ).on( "resize", function() {
+        getPdfLocation()
+} );
+</script>
+<script>
+    const pdfButtonWidth =  $(".n-pdf-header").width();
+    const pdfMenuWidth = $(".n-pdf-body-container").width();
+    $(".n-pdf-body-container").css('margin-left', `calc(${pdfButtonWidth - pdfMenuWidth}px)`);
+</script>
+</div>
+
+    
+
+</div>
+
+
+
+
+<div class="content-to-index">
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>了解侧面板中的*报告*下拉菜单：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#capacity">Capacity</a></p>
+</li>
+<li>
+<p><a href="#效率">效率</a></p>
+</li>
+<li>
+<p><a href="#性能">性能</a></p>
+</li>
+<li>
+<p><a href="#错误日志">错误日志</a></p>
+</li>
+<li>
+<p><a href="#事件">事件</a></p>
+</li>
+<li>
+<p><a href="#警报">警报</a></p>
+</li>
+<li>
+<p><a href="#iscsi会话">iSCSI会话</a></p>
+</li>
+<li>
+<p><a href="#虚拟网络">虚拟网络</a></p>
+</li>
+<li>
+<p><a href="#api收集">API收集</a></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="capacity">Capacity</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的*容量*页面上、您可以查看有关配置到卷中的整个集群空间的详细信息。容量信息栏可提供集群的块和元数据存储容量的当前状态和预测。相应的图形提供了其他集群数据分析方法。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="备注">
+</td>
+<td class="content">
+有关严重性级别和集群填充度的详细信息、请参见 <a href="https://docs.netapp.com/us-en/element-software/index.html" target="_blank" rel="noopener">"Element软件文档"</a>。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>以下说明提供了有关选定集群上的块容量、元数据容量和已配置空间的详细信息。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 20%;">
+<col style="width: 35%;">
+<col style="width: 45%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top" colspan="3">块容量</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">标题</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">预测</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used capacity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集群块的当前已用容量。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不适用</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">警告阈值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当前警告阈值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">预测何时达到警告阈值。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">错误阈值</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当前错误阈值。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">预测何时达到错误阈值。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total capacity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">块的总容量。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">预测何时达到严重阈值。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当前状态</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">块的当前状态。</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">有关严重性级别的详细信息、请参见 <a href="https://docs.netapp.com/us-en/element-software/index.html" target="_blank" rel="noopener">"Element软件文档"</a>。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">元数据容量</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">标题</p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Used capacity</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>此集群使用的元数据集群容量。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Total capacity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>此集群的总可用元数据容量以及严重阈值预测。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">当前状态</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>此集群的元数据容量的当前状态。</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="3"><p class="tableblock">已配置空间</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">标题</p></td>
+<td class="tableblock halign-left valign-top" colspan="2"><p class="tableblock">Description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已配置空间</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>集群上当前配置的空间量。</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最大已配置空间</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="效率">效率</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的集群*报告*下拉菜单的*效率*页面上、将鼠标指针移动到图形上的数据点上时、您可以查看集群上有关精简配置、重复数据删除和数据压缩的详细信息。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="备注">
+</td>
+<td class="content">
+所有综合效率均通过简单地乘以报告的系数值来计算。
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>以下说明详细介绍了选定集群上计算的效率。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">标题</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">整体效率</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精简配置、重复数据删除和数据压缩的全局效率成倍提高。这些计算不会考虑系统中内置的双Helix功能。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重复数据删除和数据压缩</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用重复数据删除和数据压缩节省的空间的综合影响。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">精简配置</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">使用此功能节省的空间量。此数字反映了为集群分配的容量与实际存储的数据量之间的差值。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">重复数据删除</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">不在集群中存储重复数据所节省空间量的比率乘数。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">压缩</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">数据压缩对集群中存储的数据的影响。不同的数据类型以不同的速率进行压缩。例如、文本数据和大多数文档可以轻松压缩到较小的空间、但视频和图形图像通常不会压缩。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="性能">性能</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的*性能*页面上、您可以通过选择类别并根据时间段进行筛选来查看有关IOPS使用情况、吞吐量和集群利用率的详细信息。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="错误日志">错误日志</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单中的*错误日志*页面上、您可以查看有关集群报告的未解决或已解决错误的信息。此信息可以筛选并导出为逗号分隔值(CSV)文件。有关严重性级别的详细信息、请参见 <a href="https://docs.netapp.com/us-en/element-software/index.html" target="_blank" rel="noopener">"Element软件文档"</a>。</p>
+</div>
+<div class="paragraph">
+<p>系统会为选定集群报告以下信息。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">标题</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">集群故障的ID。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Date</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">记录故障的日期和时间。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">severity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">这可以是警告、错误、严重或最佳实践。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">可以是节点、驱动器、集群、服务或卷。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">节点 ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此故障所引用节点的节点 ID 。对于节点和驱动器故障、会提供此信息；否则、请设置为-(短划线)。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">节点名称</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">系统生成的节点名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">驱动器 ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此故障所引用的驱动器的驱动器 ID 。对于驱动器故障、会提供此信息；否则、请设置为-(短划线)。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已解决</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">显示错误的发生原因 是否已解决。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">解决时间</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">显示解决问题描述 的时间。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">错误代码</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">一个描述性代码，用于指示故障的原因。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">详细信息</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">故障的问题描述 以及其他详细信息。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="事件">事件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的*事件*页面上、您可以查看有关集群上发生的关键事件的信息。可以筛选此信息并将其导出为CSV文件。</p>
+</div>
+<div class="paragraph">
+<p>系统会为选定集群报告以下信息。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">标题</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">事件 ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">与每个事件关联的唯一 ID 。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">事件时间</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">事件发生的时间。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">所记录的事件类型、例如API事件或克隆事件。请参见 <a href="https://docs.netapp.com/us-en/element-software/index.html" target="_blank" rel="noopener">"Element软件文档"</a> 有关详细信息 &#8230;&#8203;</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">message</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">与事件关联的消息。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">服务 ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">报告事件的服务（如果适用）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">节点 ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">报告事件的节点（如果适用）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">驱动器 ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">报告事件的驱动器（如果适用）。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">详细信息</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">有助于确定事件发生原因的信息。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="警报">警报</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的*警报*页面上、您可以查看未解决或已解决的集群警报。可以筛选此信息并将其导出为CSV文件。有关严重性级别的详细信息、请参见 <a href="https://docs.netapp.com/us-en/element-software/index.html" target="_blank" rel="noopener">"Element软件文档"</a>。</p>
+</div>
+<div class="paragraph">
+<p>系统会为选定集群报告以下信息。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">标题</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已触发</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">在SolidFire Active IQ 中触发警报的时间、而不是在集群本身上。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">上次通知</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">最近发送警报电子邮件的时间。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已解决</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">显示警报的发生原因 是否已解决。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">策略</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">这是用户定义的警报策略名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">severity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">创建警报策略时分配的严重性。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">目标</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">选择接收警报电子邮件的一个或多个电子邮件地址。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">触发器</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">触发警报的用户定义设置。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="iscsi会话">iSCSI会话</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的* iSCSI会话*页面上、您可以查看有关集群上活动会话数以及集群上已发生iSCSI会话数的详细信息。</p>
+</div>
+<details>
+<summary class="title">展开iSCSI会话示例</summary>
+<div class="content">
+<div class="paragraph">
+<p><span class="image"><img src="./media/iscsi_sessions.PNG" alt="iSCSI会话"></span></p>
+</div>
+</div>
+</details>
+<div class="paragraph">
+<p>您可以将鼠标指针移动到图形上的数据点上、以查找定义的时间段内的会话数：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Active Sessions：集群上已连接且处于活动状态的iSCSI会话数。</p>
+</li>
+<li>
+<p>活动会话峰值：过去24小时内集群上发生的最大iSCSI会话数。</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="备注">
+</td>
+<td class="content">
+此数据包括FC节点生成的iSCSI会话。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="虚拟网络">虚拟网络</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的*虚拟网络*页面上、您可以查看有关集群上配置的虚拟网络的以下信息。</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">标题</th>
+<th class="tableblock halign-left valign-top">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VLAN网络的唯一ID。这是由系统分配的。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用户为VLAN网络分配的唯一名称。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">VLAN ID</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">创建虚拟网络时分配的VLAN标记。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SVIP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">分配给虚拟网络的存储虚拟IP地址。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">网络掩码</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">此虚拟网络的网络掩码。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">网关</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">虚拟网络网关的唯一IP地址。必须启用 VRF 。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已启用VRF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">显示虚拟路由和转发是否已启用。</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">已使用的IP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">用于虚拟网络的虚拟网络IP地址的范围。</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="api收集">API收集</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在选定集群的*报告*下拉菜单的* API Collection*页面上、您可以查看NetApp SolidFire Active IQ 使用的API方法。有关这些方法的详细说明、请参见 <a href="https://docs.netapp.com/us-en/element-software/api/index.html" target="_blank" rel="noopener">"Element软件API文档"</a>。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/solidfire-active-iq/images/note.svg" alt="备注">
+</td>
+<td class="content">
+除了这些方法之外、SolidFire Active IQ 还会进行一些内部API调用、以供NetApp支持和工程部门用来监控集群运行状况。这些调用未记录在文档中、因为如果使用不当、可能会对集群功能造成中断。如果您需要完整的SolidFire Active IQ API集合列表、则必须联系NetApp支持部门。
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="了解更多信息">了解更多信息</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="https://www.netapp.com/support-and-training/documentation/" target="_blank" rel="noopener">"NetApp 产品文档"</a></p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  
+  <!-- Start Page Toolbar -->
+<div id="ie-right-navbar-collapse" class="close">
+  <img id="navbar-expand" class="ie-searchbox-icon" src="/zh-cn/solidfire-active-iq/images/double_arrow.svg" alt="" />
+</div>
+<div id="ie-right-navbar" class="open">
+  <div id="right-navbar-collapse">
+    <img src="/zh-cn/solidfire-active-iq/images/double_arrow.svg" alt="" />
+  </div>
+  <div class="page-nav-container">
+    <nav class="page-nav-fixed">
+      <div class="page-nav-title">在本页面中</div>
+      <div class="page-nav-links">
+        <ul class="page-nav-inner" id="page-menu"></ul>
+      </div>
+    </nav>
+  </div>
+</div>
+
+
+<script>
+  resizeContent();
+  function setRightBarHeight() {
+    var h = 0;
+
+    // header 1
+    h += PXinViewport($('.n-footer'));
+    h += PXinViewport($('#ie-new-header'));
+
+    if ($('#ie-right-navbar').length) {
+      $('#ie-right-navbar').css({ height: `calc(100vh - ${h}px)` });
+    }
+    if ($('.page-nav-links').length) {
+      h += 98;
+      $('.page-nav-links').css({ height: `calc(100vh - ${h}px)` });
+    }
+  }
+
+  $(document).ready(function () {
+    // PAGE NAV - Click
+    const MASTHEAD_OFFSET = 65;
+    const SECTIONS = $("main h2, main h3");
+    let calculateActiveSection = false;
+    setTimeout(() => {
+      calculateActiveSection = true;
+    }, 100)
+
+    $(".page-nav__link").click(function (event) {
+      calculateActiveSection = false;
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      var target = $(event.target);
+      target.addClass('page-nav__link--active');
+      location.hash = event.target.hash;
+      setTimeout(() => {
+        calculateActiveSection = true;
+      }, 100)
+
+    });
+
+    // PAGE NAV - Scroll
+    $(window).on('resize scroll', function () {
+      if (calculateActiveSection) {
+        var activeSection = getActiveSection(SECTIONS, MASTHEAD_OFFSET);
+        if (activeSection) {
+          var activeHref = $(activeSection).attr('id');
+          $(".page-nav__link").removeClass('page-nav__link--active');
+          $("#page-menu a[href=#" + activeHref + "]").addClass('page-nav__link--active');
+          if (location.hash != "#" + activeHref) {
+            if (history.replaceState) {
+              history.replaceState(null, null, "#" + activeHref);
+            }
+          }
+        }
+      }
+    });
+
+    $(".n-pdf-button").click(function () {
+      $(this).toggleClass("active");
+    });
+
+    $.fn.isVisibleAndInViewport = function () {
+      var elementTop = $(this).offset().top;
+      var elementBottom = elementTop + $(this).outerHeight();
+
+      var viewportTop = $(window).scrollTop();
+      var viewportBottom = viewportTop + $(window).height();
+
+      return elementBottom > viewportTop && elementTop < viewportBottom && $(this).is(":visible");
+    };
+
+
+    $(window).on('resize scroll', function () {
+      setRightBarHeight();
+    });
+
+    $(window).trigger('resize');
+
+
+  });
+
+  $("#right-navbar-collapse").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 350, function () {
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+    });
+    $(".ie-content-pane").animate({ width: (width + rightNavbarWidth) }, 350, function () {
+      resizeContent()
+      setSidebarBottom();
+    })
+
+  });
+  $("#navbar-expand").click(function (e) {
+    const rightNavbarWidth = $("#ie-right-navbar").width() - $("#ie-right-navbar-collapse").width();
+    e.preventDefault();
+    const width = $(".ie-content-pane").width();
+    $("#ie-right-navbar").animate({ width: 'toggle' }, 250, function () {
+      $("#ie-right-navbar-collapse").removeClass("open")
+      $("#ie-right-navbar-collapse").addClass("close")
+      $("#ie-right-navbar").removeClass("close")
+      $("#ie-right-navbar").addClass("open")
+      setRightBarHeight();
+      setSidebarBottom();
+    });
+    $(".ie-content-pane").animate({ width: (width - rightNavbarWidth) }, 250, function () {
+      resizeContent()
+    })
+  });
+
+  function navbarResize() {
+    const rightNavbarResized = $("#ie-right-navbar-collapse").hasClass('resized');
+    if (window.innerWidth < 1024) {
+      $("#ie-right-navbar").removeClass("open")
+      $("#ie-right-navbar").addClass("close")
+      $("#ie-right-navbar").removeAttr("style")
+      $("#ie-right-navbar-collapse").removeClass("close")
+      $("#ie-right-navbar-collapse").addClass("open")
+      $("#ie-right-navbar-collapse").addClass("resized")
+    } else {
+      if (rightNavbarResized) {
+        $('#ie-right-navbar').removeClass('close');
+        $('#ie-right-navbar').addClass('open');
+        $("#ie-right-navbar-collapse").removeClass("resized")
+        $("#ie-right-navbar-collapse").removeClass("open")
+        $("#ie-right-navbar-collapse").addClass("close")
+      }
+    }
+    resizeContent()
+  }
+  navbarResize();
+  $(window).on('resize load', function () {
+    navbarResize()
+  });
+
+  function getActiveSection(sections, offset) {
+    var scrollPosition = $(window).scrollTop() + offset + 5;
+    var activeSection;
+    for (var i = 0; i < sections.length; i++) {
+      var el = $(sections[i]);
+      var activePosition = el.offset().top;
+      if (activePosition > scrollPosition) {
+        break;
+      }
+
+      activeSection = sections[i];
+    }
+
+    return activeSection;
+  }
+
+  $("a[href*=#]:not([href=#])").click(function () {
+    setTimeout(() => {
+      $(window).trigger('scroll');
+    }, 105)
+  })
+
+  const hashOnLoad = location.href.split("#")[1];
+  setTimeout(function () {
+    if (hashOnLoad) {
+      $(".page-nav__link").removeClass('page-nav__link--active');
+      $("#page-menu a[href=#" + hashOnLoad + "]").addClass('page-nav__link--active');
+    }
+  }, 100)
+
+</script>
+
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+        <div class="n-footer__left">
+          <li class="n-footer__copyright-link">
+                    <a href="https://www.netapp.com/company/legal/copyright/">© 2023 NetApp, Inc.</a>
+          </li>
+        </div>
+        <div class="n-footer__center">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/terms-of-use/">使用条款</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/privacy-policy/">隐私策略</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a href="https://www.netapp.com/company/legal/cookie-policy/">Cookie 政策</a>
+            </li>
+            <li class="n-footer__copyright-link">
+              <a class="ot-sdk-show-settings">Cookie 设置</a>
+            </li>
+          </ul>
+       </div>
+        <div class="n-footer__right">
+              <li class="n-footer__copyright-link">
+                <a target="_self" href="javascript:netapp_mailto()">请发送有关此页面的反馈</a>
+              </li>
+        </div>
+     </div>
+  </div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/solidfire-active-iq/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/solidfire-active-iq/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/solidfire-active-iq/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/solidfire-active-iq/js/ie-tabbed-blocks.js'></script>
+    <script src='/zh-cn/solidfire-active-iq/js/ie-sidebar.js'></script>
+  </body>
+
+</html>

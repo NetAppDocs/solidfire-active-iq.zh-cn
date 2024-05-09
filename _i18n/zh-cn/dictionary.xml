@@ -1133,4 +1133,18 @@
   <block id="65041f578bcadcc7ac79c02dc07efcf6" category="paragraph">指示在创建禁止时是否已计划禁止：</block>
   <block id="9f161b7d0108b4a5362af45388ad5756" category="list-text">*True*：“创建时间”和“开始时间”值相同。</block>
   <block id="7167ed746d9c6278dbbbb2634f319107" category="list-text">*False *："创建时间"和"开始时间"值不同。</block>
+  <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">法律声明提供对版权声明、商标、专利等的访问。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
+  <block id="6016a2b341113bf496b719905398ecd2" category="section-title">版权</block>
+  <block id="09e95b77ffe81fe465a83ba99efad5c8" category="paragraph"><block ref="09e95b77ffe81fe465a83ba99efad5c8" category="inline-link-rx"></block></block>
+  <block id="126a02652da6de02962cf1b654fd6376" category="section-title">商标</block>
+  <block id="c4ce4761e466527d26b3e3d5ed1006fd" category="paragraph">NetApp 、 NetApp 徽标和 NetApp 商标页面上列出的标记是 NetApp 、 Inc. 的商标。其他公司和产品名称可能是其各自所有者的商标。</block>
+  <block id="7aa531e9acfe2b98e34d2c92fe9846ff" category="paragraph"><block ref="7aa531e9acfe2b98e34d2c92fe9846ff" category="inline-link-rx"></block></block>
+  <block id="be89498d2f8a22ce47c02ba9795fe2af" category="section-title">专利</block>
+  <block id="d0b19d36be2c5f16e9aef46c8a452d3d" category="paragraph">有关 NetApp 拥有的专利的最新列表，请访问：</block>
+  <block id="d7f1fbcf9ce4e42f705add574d262b2c" category="paragraph"><block ref="d7f1fbcf9ce4e42f705add574d262b2c" category="inline-link-rx"></block></block>
+  <block id="56c34c6410dd45c5cec44149ad0ce037" category="section-title">隐私政策</block>
+  <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
+  <block id="cc8fa0bc9def74223eff98b04c920c7d" category="sidebar">NetApp SolidFire Active IQ 是一款基于Web的工具、可提供持续更新的集群范围统计信息历史视图。您可以设置通知、以提醒您集群上的指定事件、阈值或指标、以便在出现这些事件、阈值或指标时快速予以解决。Active IQ工具可以让您轻松地从任何位置监控容量和性能、并获得有关集群运行状况的信息。</block>
+  <block id="e79aba466781e2b47a4a51d4a5e2f1f7" category="sidebar">法律声明</block>
 </blocks>

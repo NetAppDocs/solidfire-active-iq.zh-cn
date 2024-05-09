@@ -1,0 +1,29 @@
+---
+indexpage:
+  title: NetApp SolidFire Active IQ
+  summary: NetApp SolidFire Active IQ 是一款基于Web的工具、可提供持续更新的集群范围统计信息历史视图。借助SolidFire
+    Active IQ 工具、可以轻松地从任意位置监控容量和性能。
+  keywords: solidfire, active iq, element software, netapp hci
+  lead: NetApp SolidFire Active IQ 是一款基于Web的工具、可提供持续更新的集群范围统计信息历史视图。您可以设置通知、以提醒您集群上的指定事件、阈值或指标、以便在出现这些事件、阈值或指标时快速予以解决。Active
+    IQ工具可以让您轻松地从任何位置监控容量和性能、并获得有关集群运行状况的信息。
+  tiles:
+  - title: 使用SolidFire Active IQ 工具
+    links:
+    - title: 入门
+      url: "/task-active-iq-get-started-overview.html"
+    - title: 管理SolidFire Active IQ
+      url: "/task-active-iq-manage-overview.html"
+  - title: 产品文档
+    links:
+    - title: SolidFire 和Element软件
+      url: https://docs.netapp.com/us-en/element-software/index.html
+    - title: NetApp HCI
+      url: https://docs.netapp.com/us-en/hci/index.html
+    - title: NetApp 产品文档
+      url: https://www.netapp.com/support-and-training/documentation
+  - title: 故障排除
+    links:
+    - title: 故障排除
+      url: "/task-active-iq-troubleshoot-support.html"
+    - title: 请联系技术支持
+      url: https://mysupport.netapp.com/site/global/dashboard

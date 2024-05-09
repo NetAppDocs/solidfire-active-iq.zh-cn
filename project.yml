@@ -79,25 +79,5 @@ sidebar:
       url: "/task-active-iq-all-nodes-view.html"
   - title: 故障排除和支持
     url: "/task-active-iq-troubleshoot-support.html"
-homepage:
-  tiles:
-  - title: 使用SolidFire Active IQ 工具
-    links:
-    - title: 入门
-      url: "/task-active-iq-get-started-overview.html"
-    - title: 管理SolidFire Active IQ
-      url: "/task-active-iq-manage-overview.html"
-  - title: 产品文档
-    links:
-    - title: SolidFire 和Element软件
-      url: https://docs.netapp.com/us-en/element-software/index.html
-    - title: NetApp HCI
-      url: https://docs.netapp.com/us-en/hci/index.html
-    - title: NetApp 产品文档
-      url: https://www.netapp.com/support-and-training/documentation
-  - title: 故障排除
-    links:
-    - title: 故障排除
-      url: "/task-active-iq-troubleshoot-support.html"
-    - title: 请联系技术支持
-      url: https://mysupport.netapp.com/site/global/dashboard
+  - title: 法律声明
+    url: "/legal-notices.html"
